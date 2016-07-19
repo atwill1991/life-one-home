@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<!-- 登录页面 begin： -->
+	<div id="login-page">
+		<header class="login-header clearfix">
+			<span class="left-angle" id="login-back"></span>
+			<span class="center" id="login">登录</span>
+			<span class="right" id="register">注册</span>	
+		</header>
+		<div class="login-icon">
+			<img src="img/myinfo-img/login-icon.png">
+		</div>
+		<input type="text" placeholder="请输入账号/手机号" class="account"></input>
+		<input type="password" placeholder="请输入密码" class="password"></input>
+		<p class="tips-password clearfix">
+			<a href="javascript:void(0)" id="resetBtn">忘记密码？</a>
+		</p>
+		<p class="login-submit" id="login-btn">登录</p>
+	</div>
+	<!-- 注册页面 begin： -->
+	<div id="register-page" class="pwd">
+		<header class="login-header clearfix">
+			<span class="left-angle" id="register-back"></span>
+			<span class="center" id="login">注册</span>	
+		</header>
+		<form class="tel-form">
+			<input type="text" placeholder="请输入手机号" class="register-tel tel-number1"></input>
+			<p class="clearfix">
+				<input type="text" placeholder="请输入验证码" class="register-code"></input>
+				<a href="javascript:void(0)" class="send-code send-btn1">发送验证码</a>
+			</p>
+		</form>
+		<form class="pwd-form">
+			<input type="password" placeholder="请设置密码"></input>
+			<input type="password" placeholder="请再次确认密码"></input>
+		</form>
+		<p class="login-submit" id="register-btn">注册</p>
+	</div>
+	<!-- 忘记密码页面： -->
+	<div id="pwdReset-page" class="pwd">
+		<header class="login-header clearfix">
+			<span class="left-angle" id="pwdReset-back"></span>
+			<span class="center" id="login">忘记密码</span>	
+		</header>
+		<form class="tel-form">
+			<input type="text" placeholder="请输入手机号" class="register-tel tel-number2"></input>
+			<p class="clearfix">
+				<input type="text" placeholder="请输入验证码" class="register-code"></input>
+				<a href="javascript:void(0)" class="send-code send-btn2">发送验证码</a>
+			</p>
+		</form>
+		<form class="pwd-form">
+			<input type="password" placeholder="请设置密码"></input>
+			<input type="password" placeholder="请再次确认密码"></input>
+		</form>
+		<p class="login-submit" id="register-btn">确认</p>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#register").on("click",function(){
+			$("#login-page").hide();
+			$("#register-page").show();
+		})
+		$("#register-back").on("click",function(){
+			$("#register-page").hide();
+			$("#login-page").show();
+		})
+		// $("#register").trigger("click");
+		var sendCodeFlag1=true;
+		$(".send-btn1").on("click",function(){
+			if(sendCodeFlag1){
+				sendCodeFlag1=false;
+				var reg = /^1[1-9]{10}$/;//定义正则表达式
+				var str = $(".tel-number1").val().trim();
+				// console.log(reg.test(str));
+				if(reg.test(str)){
+					var num=60;
+					clearInterval(timer);
+					var timer=setInterval(function(){
+						num--;
+						$(".send-btn1").get(0).innerHTML=num+"s后可重发";
+						if(num<=0){
+							$(".send-btn1").get(0).innerHTML="发送验证码";
+							sendCodeFlag1=true;
+							clearInterval(timer);
+						}
+					},1000)
+				}
+			}
+		})
+		var sendCodeFlag2=true;
+		$(".send-btn2").on("click",function(){
+			if(sendCodeFlag2){
+				sendCodeFlag2=false;
+				var reg = /^1[1-9]{10}$/;//定义正则表达式
+				var str = $(".tel-number2").val().trim();
+				// console.log(reg.test(str));
+				if(reg.test(str)){
+					var num=60;
+					clearInterval(timer2);
+					var timer2=setInterval(function(){
+						num--;
+						$(".send-btn2").get(0).innerHTML=num+"s后可重发";
+						if(num<=0){
+							$(".send-btn2").get(0).innerHTML="发送验证码";
+							sendCodeFlag2=true;
+							clearInterval(timer2);
+						}
+					},1000)
+				}
+			}
+		})
+		$("#resetBtn").on("click",function(){
+			$("#login-page").hide();
+			$("#pwdReset-page").show();
+		})
+		// $("#resetBtn").trigger("click");
+		$("#pwdReset-back").on("click",function(){
+			$("#pwdReset-page").hide();
+			$("#login-page").show();
+		})
+		$("#login-back").on("click",function(){
+			location.href="index.html";
+		})
+		$("#login-btn").on("click",function(){
+			location.href="myhtml/my-index.html";
+		})
+	})
+	</script>
+</body>
+</html>

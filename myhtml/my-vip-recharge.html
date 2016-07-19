@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>订单详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-vip-siblings.css">
+</head>
+<body>
+	<div class="my-vip-recharge-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-vip-recharge-back" class="get-back"></a>
+					<h3 class="cur-title">订单详情</h3>
+				</header>
+			</div>
+		</div>
+		<!-- 4.2升级会员的订单详情支付页面： -->
+		<div class="upgrade-vip-info">
+			<p class="clearfix">
+				<a href="javascript:void(0)">购买商品</a>
+				<a href="javascript:void(0)">待付款</a>
+			</p>
+			<div class="upgrade-vip-card clearfix">
+				<img src="../img/index-img/vip-detail-img.png">
+				<div>
+					<p>升级成为VIP会员</p>
+					<p>期限为一年</p>
+					<p>￥100</p>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="public-confirm-btn pay-confirm-btn">立即支付</a>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-vip-recharge-back").on("click",function(){
+				location.href="my-vip.html";
+			})
+			$(".pay-confirm-btn").on("click",function(){
+				//需添加支付环节
+				location.href="my-vip-recharge-success.html";
+			})
+		})
+	</script>
+</body>
+</html>

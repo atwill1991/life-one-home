@@ -1,0 +1,218 @@
+body{
+	background-color: #f1f2f3;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+a{
+	text-decoration: none;
+}
+ul.address-wrap>li{
+	position: relative;
+	padding:2.6%;
+	background-color: white;
+	margin-bottom: 2.6%;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+.address-wrap>li span.name{
+	margin-right: 2%;
+}
+.address-wrap>li:first-child span.default{
+	color: #ed8e00;
+}
+ul.address-wrap>li:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+	right: 2.6%;
+	width: 12px;
+	height: 22px;
+	background: url(../../img/myinfo-img/icon-right-btn.png) no-repeat;
+	background-size: 100% 100%;
+}
+/********************修改收货地址时的页面的样式 begin ：********************/
+ul.address-info-wrap{
+	background-color: white;
+	margin-top: 3.2%;
+	border-top:1px solid #e4e5e6;
+}
+.address-info-wrap>li{
+	height: 46px;
+	line-height: 46px;
+	color: #58595a;
+	font-size: 1.6rem;
+	padding:0 2.4%;
+	border-bottom:1px solid #e4e5e6;
+}
+.address-info-wrap>li>input{
+	height: 100%;
+	border:none;
+	outline: none;
+	height: 46px;
+	line-height: 46px;
+	color: #58595a;
+	font-size: 1.6rem;
+	padding-left: 2%;
+}
+li.address-details>input{
+	width: 100%;
+}
+li.address-info>span{
+	float: left;
+	width: 16%;
+}
+li.address-info>p{
+	float: right;
+	width: 84%;
+}
+li.address-info>p>span{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+li.address-info>p>span:after{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-left: 2px solid #acadae;
+	border-bottom: 2px solid #acadae;
+	transform: rotateZ(-45deg);
+	margin-left: 6%;
+}
+li.default-address-set>span{
+	position: relative;
+	float: right;
+	display: inline-block;
+	height: 28px;
+	width: 12.6%;
+	background-color: gray;
+	margin-top: 9px;
+	border-radius: 14px;
+	transition: background-color 0.8s;
+	-moz-transition: background-color 0.8s; /* Firefox 4 */
+	-webkit-transition: background-color 0.8s; /* Safari 和 Chrome */
+	-o-transition: background-color 0.8s; /* Opera*/
+}
+li.default-address-set>span:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: white;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera*/
+}
+li.default-address-set>span.setActive{
+	background-color: #ec9119;
+}
+li.default-address-set>span.setActive:after{
+	left: 100%;
+	margin-left: -26px;
+}
+a.confirm-btn{
+	margin-top:30%;
+}
+/*点击编辑时，出现的选择地址的蒙层和内容：*/
+.mask-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.mask-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	max-width: 750px;
+	margin:0 auto;
+}
+p.handle-btn{
+	position: absolute;
+	left: 0;
+	bottom: 220px;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	padding:2.6%;
+	background-color: #cbcccd;
+}
+p.handle-btn>a{
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	font-size: 1.6rem;
+	margin-top:-19px;
+}
+a.handle-cancel-btn{
+	float: left;
+}
+a.handle-confirm-btn{
+	float: right;
+}
+ul.address-select-wrap{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 220px;
+	background-color: white;
+}
+ul.address-select-wrap>li{
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 16.66%;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 44px;
+	overflow: hidden;
+}
+ul.address-select-wrap>li>ul{
+	position: relative;
+	top:88px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
+ul.address-select-wrap>li:nth-child(even){
+	line-height: 220px;
+	text-align: left;
+	color: #ec8f00;
+}
+ul.address-select-wrap>li:nth-child(odd){
+	/*background-color: gray;*/
+}
+ul.address-select-wrap:before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 88px;
+	width: 100%;
+	height: 40px;
+	/*background-color: red;*/
+	border-top:2px solid #eeedef;
+	border-bottom:2px solid #eeedef;
+}
+
+/********************修改收货地址时的页面的样式 end ********************/
+
+
+

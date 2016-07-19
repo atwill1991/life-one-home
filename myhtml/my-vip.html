@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>升级会员</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-vip.css">
+</head>
+<body>
+	<div class="my-vip-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-vip-back" class="get-back"></a>
+					<h3 class="cur-title">升级会员</h3>
+					<a href="javascript:void(0)" class="font-btn vip-recharge-btn">充值</a>
+				</header>
+			</div>
+		</div>
+		<ul class="my-vip-info">
+			<li>会员等级说明</li>
+			<li>说明文字说明文字说明文字说明文字说明文字说明文字说明文字</li>
+		</ul>
+		<p class="vip-model general-vip-info">VIP会员</p>
+		<ul class="general-vip-info-list">
+			<li>1.说明文字</li>
+			<li>2.说明文字</li>
+			<li>3.说明文字</li>
+		</ul>
+		<p class="vip-model holder-vip-info">股东会员</p>
+		<ul class="holder-vip-info-list">
+			<li>1.说明文字</li>
+			<li>2.说明文字</li>
+			<li>3.说明文字</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-vip-back").on("click",function(){
+				location.href="my-index.html";
+			})
+			$(".vip-recharge-btn").on("click",function(){
+				location.href="my-vip-recharge.html";
+			})
+		})
+	</script>
+</body>
+</html>

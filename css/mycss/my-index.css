@@ -1,0 +1,218 @@
+body{
+	background-color: #f1f2f3;
+}
+.my-index-page{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+.bg-head-img-wrap{
+	position: relative;
+	width: 100%;
+}
+.bg-head-img-wrap>img.bg-head-img-bg{
+	width: 100%;
+}
+.bg-head-img-wrap>.bg-head-img-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+a.bg-head-img-inner{
+	position: relative;
+	display: block;
+	width: 20%;
+	margin:10% auto 0;
+	border-radius: 100%;
+	border:4px solid #eaebdb;
+	background: url(../../img/myinfo-img/my-icon.png) no-repeat;
+	background-size: 218% 290%;
+	background-position: 50% 20%;
+}
+.bg-head-img-inner>img.transparent-rect-img{
+	width: 100%;
+	height: 100%;
+}
+img.holder-marker-icon{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 30%;
+}
+a{
+	text-decoration: none;
+}
+a.user-alias{
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	margin:2% 0;
+}
+.holder-marker-show{
+	display: block;
+	width: 18%;
+	min-width: 100px;
+	height: 36px;
+	margin:0 auto;
+	border:2px solid white;
+	border-radius: 18px;
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+	font-size: 1.6rem;
+}
+ul.my-operate-list{
+	background-color: #f1f2f3;
+}
+.my-operate-list>li{
+	position: relative;
+	background-color: #fff;
+}
+.my-operate-list>li>a{
+	position: relative;
+	top: 0;
+	right: -5%;
+	display: block;
+	width: 94%;
+	height: 56px;
+	line-height: 56px;
+	box-sizing: border-box;
+	padding-left: 66px;
+	border-bottom:1px solid #e6e7e8;
+	font-size: 1.8rem;
+}
+.my-operate-list>li>a:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	/*border: 1px solid red;*/
+	background: url(../../img/myinfo-img/my-index-icon.png) no-repeat;
+	background-size: 280px 35px;
+}
+.my-operate-list>li>a.my-info:before{
+	background-position: 3px 5px;
+}
+.my-operate-list>li>a.my-order:before{
+	background-position: -34px 5px;
+}
+.my-operate-list>li>a.my-collection:before{
+	background-position: -67px 5px;
+}
+.my-operate-list>li>a.my-wallet:before{
+	background-position: -102px 5px;
+}
+.my-operate-list>li>a.my-address:before{
+	background-position: -136px 5px;
+}
+.my-operate-list>li>a.my-vip:before{
+	background-position: -168px 5px;
+}
+.my-operate-list>li>a.my-more:before{
+	background-position: -203px 5px;
+}
+.my-operate-list>li>a.my-cancel:before{
+	background-position: -239px 5px;
+}
+.my-operate-list>li:nth-child(6)>a{
+	border: none;
+}
+.my-operate-list>li:nth-child(6){
+	border-bottom: 1px solid #e6e7e8;
+}
+.my-operate-list>li:nth-child(7){
+	margin-top: 2.6%;
+	border-top: 1px solid #e6e7e8;
+}
+.my-operate-list>li>a>span{
+	display: block;
+	position: absolute;
+	top: 16px;
+	right: 2.6%;
+	width: 12px;
+	height: 22px;
+	background: url(../../img/myinfo-img/icon-right-btn.png) no-repeat;
+	background-size: 100% 100%;
+}
+/**********底部的footer部分 begin ：*************/
+/*底部切换：*/
+.index-footer-wrap{
+	width: 100%;
+	height: 76px;
+}
+footer.index-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height:56px;
+}
+ul.ind-footer{
+	width: 100%;
+	height:56px;
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: white;
+}
+ul.ind-footer>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-size: 1.4rem;
+	color:#7e7e7f;
+	padding-top:4px;
+}
+ul.ind-footer>li>a{
+	display: block;
+	margin:0 auto;
+	text-decoration: none;
+}
+ul.ind-footer>li.myActive>a{
+	color:#ed8fe8;
+}
+ul.ind-footer>li:before{
+	content: '';
+	display: block;
+	margin:0 auto;
+	width: 30px;
+	height: 28px;
+	background: url(../../img/index-img/index-icon.png) no-repeat;
+	background-size: 150px 60px;
+}
+ul.ind-footer>li:nth-child(1):before{
+	background-position: -1% -4%;
+}
+ul.ind-footer>li:nth-child(2):before{
+	background-position: 25% -4%;
+}
+ul.ind-footer>li:nth-child(3):before{
+	background-position: 52% -4%;
+}
+ul.ind-footer>li:nth-child(4):before{
+	background-position: 77% -4%;
+}
+ul.ind-footer>li:nth-child(5):before{
+	background-position: 105% -4%;
+}
+ul.ind-footer>li.index-page.myActive:before{
+	background-position: -1% 102%;
+}
+ul.ind-footer>li.vip.myActive:before{
+	background-position: 25% 104%;
+}
+ul.ind-footer>li.sort.myActive:before{
+	background-position: 52% 103%;
+}
+ul.ind-footer>li.cart.myActive:before{
+	background-position: 77% 104%;
+}
+ul.ind-footer>li.info.myActive:before{
+	background-position: 105% 104%;
+}
+
+/**********底部的footer部分 end ：*************/

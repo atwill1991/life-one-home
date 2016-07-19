@@ -1,0 +1,127 @@
+body{
+	background-color: #f1f2f3;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+a{
+	text-decoration: none;
+}
+/******************* 1.关于我们的页面的样式 begin ：*******************/
+.my-more-about-inner{
+	padding: 4% 2.6%;
+	font-size: 1.6rem;
+	color: #353638;
+}
+/******************* 1.关于我们的页面的样式 end *******************/
+/******************* 2.帮助中心的页面的样式 begin ：*******************/
+ul.help-info-wrap{
+	margin-top:12%;
+	border-bottom: 2px solid #e7e8e9;
+}
+ul.help-info-wrap>li{
+	width: 94%;
+	margin:0 auto;
+	text-align: center;
+}
+ul.help-info-wrap>li:first-child>img{
+	display: block;
+	width: 12%;
+	margin:0 auto;
+}
+ul.help-info-wrap>li:nth-child(2){
+	font-size: 1.4rem;
+	color:#8e8f90;
+	margin-top:2%;
+}
+ul.help-info-wrap>li:nth-child(3){
+	font-size: 2rem;
+	color:#6d6e6f;
+}
+ul.help-info-wrap>li:nth-child(4)>a{
+	display: block;
+	width: 25%;
+	min-width: 110px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin:3.6% auto 18%;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	padding-left: 30px;
+	border-radius: 4px;
+	background: #64b9fd url(../../img/myinfo-img/icon-phone-img.png) no-repeat;
+	background-size: 16px 16px;
+	background-position: 10px 6px;
+	color: white;
+}
+ul.help-info-wrap>li:nth-child(5){
+	text-align: left;
+	font-size: 1.6rem;
+	color: #747576;
+}
+ul.htlp-question-list{
+	background-color: white;
+}
+ul.htlp-question-list>li{
+	border-bottom: 2px solid #edeeee;
+}
+ul.htlp-question-list>li>a{
+	display: block;
+	position: relative;
+	width: 94%;
+	height: 44px;
+	line-height: 44px;
+	font-size: 1.6rem;
+	color: #2a2b2e;
+	margin:0 auto;
+}
+ul.htlp-question-list>li>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 12px;
+    height: 22px;
+    background: url(../../img/myinfo-img/icon-right-btn.png) no-repeat;
+    background-size: 100% 100%;
+}
+/******************* 2.帮助中心的页面的样式 end *******************/
+/******************* 2.1帮助中心的子页面之常见问题的页面的样式 begin ：*******************/
+dl.help-question-wrap{
+	width: 94%;
+	margin:4% auto;
+}
+.help-question-wrap>dt{
+	font-size: 1.6rem;
+	color: #5f6061;
+	line-height: 2;
+}
+.help-question-wrap>dd{
+	font-size: 1.6rem;
+	color: #000;
+}
+/******************* 2.1帮助中心的子页面之常见问题的页面的样式 end *******************/
+/******************* 3.帮助中心的子页面之意见反馈的页面的样式 begin ：*******************/
+.opinion-back-txt{
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	box-sizing: border-box;
+	padding:2% 3%;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	resize: none;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #e9eaea;
+}
+a.opinion-back-confirm-btn{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+/******************* 3.帮助中心的子页面之意见反馈的页面的样式 end *******************/

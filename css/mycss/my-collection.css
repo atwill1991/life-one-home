@@ -1,0 +1,117 @@
+body{
+
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+a{
+	text-decoration: none;
+}
+
+li.goods-info-wrap{
+	position: relative;
+	padding:3.6% 2.6%;
+	/*border-top:2px solid #ebeced;*/
+	border-bottom:2px solid #ebeced;
+}
+.goods-info-wrap>a>img{
+	float: left;
+	width: 20%;
+}
+.goods-info-wrap>a>div.right{
+	float: right;
+	width: 78%;
+	line-height: 1.5;
+	font-size: 1.4rem;
+}
+div.right>h3{
+	width: 70%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1.6rem;
+	padding-top: 4%;
+	margin-bottom: 4%;
+}
+p.goods-price{
+	color: #d50000;
+}
+li.add-select{
+	padding-left:36px;
+}
+li.add-select:before{
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	margin-top:-11px;
+	background:url(../../img/myinfo-img/pay-way-icon.png) no-repeat;
+	background-size: 50px 150px;
+	background-position: -15px -123px;
+}
+li.add-select.select-active:before{
+	background-position: -15px -91px;
+}
+/*编辑时底部出现的全选及删除按钮：*/
+.footer-container{
+	height: 68px;
+	display: none;
+}
+.footer-inner{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 52px;
+	width: 100%;
+}
+footer.footer-wrap{
+	position: relative;
+	width: 100%;
+	height: 52px;
+	max-width: 750px;
+	margin:0 auto;
+	background-color: #f1f2f3;
+	border-top:#ecedee;
+}
+a.log-delete-btn{
+	position: absolute;
+	top: 8px;
+	right: 2.6%;
+	height: 34px;
+	line-height: 34px;
+	width: 34%;
+	margin:0;
+	background-color: #e94347;
+}	
+span.select-all-btn{
+	display: inline-block;
+	margin-left: 2.6%;
+	padding-left:36px;
+	color: #464748;
+	font-size: 1.6rem;
+	height: 52px;
+	line-height: 52px;
+}
+.select-all-btn:before{
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	margin-top:-11px;
+	background:url(../../img/myinfo-img/pay-way-icon.png) no-repeat;
+	background-size: 50px 150px;
+	background-position: -15px -123px;
+}
+.select-all-btn.select-active:before{
+	background-position: -15px -91px;
+}

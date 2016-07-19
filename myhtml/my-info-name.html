@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-info-siblings.css">
+</head>
+<body>
+	<div class="my-info-name-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-info-name-back" class="get-back"></a>
+					<h3 class="cur-title">姓名</h3>
+				</header>
+			</div>
+		</div>
+		<form>
+			<input type="text" class="my-info-name" value="李晓晓"> 
+			<a href="javascript:void(0)" id="name-operate-confirm" class="operate-confirm">确认</a>
+		</form>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-info-name-back").on("click",function(){
+				location.href="my-info.html";
+			})
+		})
+	</script>
+</body>
+</html>

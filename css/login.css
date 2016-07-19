@@ -1,0 +1,166 @@
+
+/***********登录页面 begin********/
+body{
+	background-color: #f1f2f3;
+}
+#login-page{
+	width: 100%;
+}
+.login-header{
+	position: relative;
+	height:30px;
+	line-height: 30px;
+	padding-top: 10px;
+	background-color: #ec9119;
+	text-align: center;
+	font-weight: 0;
+	color:white;
+}
+.left-angle{
+	position: absolute;
+	bottom:10px;
+	left: 10px;
+	width: 12px;
+	height: 12px;
+	border-bottom:2px solid white;
+	border-left: 2px solid white;
+	-webkit-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	cursor: pointer;
+}
+.center{
+	font-size: 1.6rem;
+}
+.right{
+	float: right;
+	margin-right:10px;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.login-icon{
+	padding:9.8% 0 8.8%;
+}
+.login-icon>img{
+	display: block;
+	width:26.8%;
+	margin:0 auto;
+}
+.account,.password{
+	display: block;
+	margin:0 auto;	
+	width: 74%;
+	height:16px;
+	font-size: 1.4rem;
+	padding-left:12%;
+	padding-top:3%;
+	padding-bottom: 3%;
+	border: 2px solid #dadbdc;
+	border-radius: 4px;
+}
+.account{
+	background: white url(../img/myinfo-img/icon-user.png) no-repeat;
+	background-size: 18px 18px;
+	background-position: 16px center;
+	margin-bottom:4%;
+}
+.password{
+	background: white url(../img/myinfo-img/icon-key.png) no-repeat;
+	background-size: 16px 20px;
+	background-position: 16px center;
+}
+.tips-password{
+	width: 86%;
+	margin:0 auto;
+}
+.tips-password>a{
+	float: right;
+	text-decoration:none;
+	font-size: 1.2rem;
+	color:#ecb882;
+}
+.login-submit{
+	width:86%;
+	height: 46px;
+	background-color: #ec9119;
+	margin:0 auto;
+	line-height: 46px;
+	text-align: center;
+	color:white;
+	border-radius: 4px;
+	font-size: 1.6rem;
+}
+#login-btn{
+	margin-top:10%;
+}
+/***********登录页面 end********/
+/***********注册页面 begin********/
+#register-page{
+	display: none;
+}
+.pwd>form{
+	width:86%;
+	margin:0 auto;
+}
+.tel-form input{
+	border-radius: 4px;
+	border: 2px solid #dadbdc;
+}
+.tel-form>p{
+	margin: 10px 0;
+}
+.tel-form input{
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 1.6rem;
+}
+.register-tel{
+	width:100%;
+	height: 46px;
+	margin-top: 30px;
+}
+.register-code{
+	float:left;
+	width: 60%;
+}
+.send-code{
+	float: right;
+	width: 37%;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e66e6d;
+	color:white;
+	border:none;
+	border-radius: 4px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 1.6rem;
+}
+.pwd-form{
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 2px solid #dadbdc;
+	background-color: white;
+}
+.pwd-form>input{
+	display: block;
+	width:95%;
+	margin:0 auto;
+	border:none;
+	height:46px;
+	font-size: 1.6rem;
+}
+.pwd-form>input:first-child{
+	border-bottom: 2px solid #ebeced;
+}
+#register-btn{
+	margin-top:28%;
+}
+/***********注册页面 end********/
+/***********忘记密码页面 begin********/
+#pwdReset-page{
+	display: none;
+}
+

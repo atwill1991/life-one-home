@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我能供应</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-info-siblings.css">
+</head>
+<body>
+	<div class="my-info-supply-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-info-supply-back" class="get-back"></a>
+					<h3 class="cur-title">我能供应</h3>
+				</header>
+			</div>
+		</div>
+		<form class="password-txt my-supply-txt clearfix">
+			<label>行业类型：</label>
+			<input type="text" class="" placeholder="6-20字符">
+		</form>
+		<form class="password-txt my-supply-txt clearfix">
+			<label>我能供应：</label>
+			<input type="text" class="" placeholder="6-20字符">
+		</form>
+		<form class="password-txt supply-details-txt clearfix">
+			<label>描述：</label>
+			<textarea name="" id="" class=""></textarea> 
+		</form>
+		<p class="up-img-title">图片：</p>
+		<form class="up-img">
+			<input type="file" accept="image/*" multiple="" class="up-img-input">
+			<a href="javascript:void(0)" class="up-img-a-btn"><img src="../img/myinfo-img/img-updata-icon.png"></a> 
+		</form>
+		<div class="updata-img-wrap clearfix"></div>
+		<a href="javascript:void(0)" class="public-confirm-btn my-supply-confirm">确认</a>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-info-supply-back").on("click",function(){
+				location.href="my-info.html";
+			})
+			$(".up-img-a-btn").on("click",function(){
+				$(".up-img-input").trigger("click")
+			})
+			//选择本地图片后，显示图片的缩略图：
+			$(".up-img-input").on("change",function(){
+				var files=this.files;
+				$(".updata-img-wrap").html("");
+				for(var i=0;i<files.length;i++){
+					//显示上传图片的缩略图：
+					var url=window.URL || window.webkitURL;
+					if(url){
+						var src=url.createObjectURL(files[i]);
+						var img=new Image();
+						img.src=src;
+						img.onload=function(){
+							//图片加载完毕之后，释放资源：
+							url.revokeObjectURL(src);
+						}
+						$(".updata-img-wrap").append(img);
+					}else if(window.FileReader){
+						var fr=new FileReader();
+						fr.readAsDataURL(files[i]);//将图片文件转换成base64位
+						fr.onload=function(e){
+							var img=new Image();
+							img.src=this.result;
+							$(".updata-img-wrap").append(img);
+						}
+					}
+				}
+			})
+			
+		})
+	</script>
+</body>
+</html>

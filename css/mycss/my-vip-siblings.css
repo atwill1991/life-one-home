@@ -1,0 +1,77 @@
+body{
+	background-color: #f1f2f3;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+/*<!-- 4.2升级会员的订单详情支付页面： -->*/
+.upgrade-vip-info{
+	background-color: white;
+}
+.upgrade-vip-info>p{
+	width: 94%;
+	font-size: 1.6rem;
+	margin:0 auto;
+	padding: 3% 0;
+	border-bottom:1px solid #e9eaeb;
+}
+.upgrade-vip-info>p>a:first-child{
+	float: left;
+}
+.upgrade-vip-info>p>a:last-child{
+	float: right;
+}
+.upgrade-vip-info>p>a{
+	color:#808182;
+	text-decoration: none;
+}
+.upgrade-vip-card{
+	padding:3%;
+}
+.upgrade-vip-card>img{
+	float: left;
+	width: 18.6%;
+}
+.upgrade-vip-card>div{
+	float: right;
+	width: 78%;
+}
+.upgrade-vip-card>div>p:first-child{
+	font-size: 1.6rem;
+	color:#808182;
+	margin-top:1%;
+}
+.upgrade-vip-card>div>p:nth-child(2){
+	font-size: 1.4rem;
+	color:#7c7d7e;
+}
+.upgrade-vip-card>div>p:last-child{
+	font-size: 1.4rem;
+	color:#d60000;
+}
+a.pay-confirm-btn{
+	margin-top: 6%;
+}
+/*<!-- 4.3升级会员的订单详情支付成功页面： -->*/
+.upgrade-vip-success{
+	display: none;
+}
+.upgrade-vip-pay-success>img{
+	display: block;
+	width: 26%;
+	margin: 14% auto 0;
+}
+.upgrade-vip-pay-success>p{
+	text-align: center;
+	font-size: 2.2rem;
+	color:#16181a;
+	margin-top:7.2%;
+}
+a.go-shopping-confirm-btn{
+	width: 34%;
+	background-color: #e94347;
+	margin-top:20%;
+	margin-bottom: 10%;
+}

@@ -1,0 +1,362 @@
+body{
+	background-color: #f1f2f3;
+}
+body>div{
+	max-width: 750px;
+	margin:0 auto;
+}
+.sales-phone-details-page{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+header,footer{
+	max-width: 750px;
+	margin:0 auto;
+}
+/*** 头部部分begin：***/
+.header-wrap,.header-container{
+	background-color: transparent;
+}
+header.pub-header{
+	background-color: #e1e1e1;
+}
+/*** 头部部分 end ***/
+.goods-bg-img{
+	width: 100%;
+	padding-bottom: 5.2%;
+	background-color: #e1e1e1;
+}
+.goods-bg-img>img{
+	display: block;
+	width: 68%;
+	margin:0 auto;
+}
+.sales-info{
+	background-color: #fff;
+}
+.goods-title{
+	height: 100%;
+	width: 96%;
+	margin: 0 auto;
+	font-size: 2rem;
+	line-height: 2.6;
+	color:#525354;
+}
+.sales-goods-price{
+	width: 96%;
+	margin:0 auto;
+	color:#acadae;
+	font-size: 1.8rem;
+}
+.sales-goods-price>span:nth-child(1){
+	color:#e95c44;
+	margin-right: 5%;
+}
+.sales-goods-price>span:nth-child(2)>span{
+	text-decoration: line-through;
+}
+.sales-goods-price>span:nth-child(3){
+	float: right;
+}
+.sales-count-down{
+	width: 96%;
+	margin:0 auto;
+	border-top:2px solid #f2f3f4;
+	font-size: 1.4rem;
+	line-height: 2;
+	color:#b0b1b2;
+}
+.goods-count-down-number{
+	float: right;
+}
+/*商品详情和用户评价：*/
+.sales-goods-wrap{
+	background-color: #fff;
+	margin-top: 3%;
+}
+/*商品详情：*/
+.sales-goods-wrap>ul.detail-title {
+	position: relative;
+	color:#98989a;
+	font-size: 1.8rem;
+	line-height: 2;
+	border-bottom:2px solid #e5e5e6;
+}
+.sales-goods-wrap>ul>li{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.bottom-slide{
+	position: absolute;
+	left: 17%;
+	bottom:-1px;
+	width: 16%;
+	/*min-width: 100px;*/
+	height: 2px;
+	background-color: #f90d0d;
+}
+.goods-detail-wrap{
+	width: 96%;
+	margin:2.2% auto;
+}
+.goods-detail-wrap>img{
+	width: 100%;
+}
+/*用户评价:*/
+.user-assess-wrap{
+	display: none;
+}
+.user-assess-wrap>ul{
+	border-bottom: 2px solid #e5e5e6;
+}
+.user-assess-wrap>ul>li{
+	width: 96%;
+	margin:0 auto;
+}
+.user-assess-wrap>ul>li{
+	font-size: 1.4rem;
+	color:#646565;
+	padding:1% 0;
+}
+.user-assess-wrap>ul>li.user-assess-info{
+	line-height: 1.4;
+	color: #01030a;
+}
+/*.user-assess-wrap>ul>li>span.user-score{
+	width: 16%;
+}*/
+.user-assess-wrap>ul>li>p.user-score{
+	display: inline-block;
+	height: 19px;
+	line-height: 19px;
+}
+.user-assess-wrap>ul>li>p.user-score>span{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	vertical-align: middle;
+	/*border:1px solid red;*/
+	background: url(../img/index-img/icon-assess-star.png) no-repeat;
+	background-size: 12px 66px;
+	background-position: 3px -51px;
+}
+.user-assess-wrap>ul>li>p.user-score>span.starActive{
+	background-position: 3px 1px;
+}
+.user-assess-wrap>ul>li>span.date-info{
+	float: right;
+}
+
+/*底部footer:*/
+.sales-footer-wrap{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+.sales-footer-container{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #f1f2f3;
+}
+footer.sales-footer{
+	position: relative;
+	background-color: #f1f2f3;
+	width: 100%;
+	height: 50px;
+	background-color: 
+}
+.footer-icon-cart{
+	position: relative;
+	width: 46px;
+	height: 44px;
+	background: url(../img/index-img/shopping-cart.png) no-repeat;
+	background-size: 30px 28px;
+	background-position: 10px 10px;
+	margin-left: 18px;
+}
+.cart-goods-number{
+	position: absolute;
+	top: 6px;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: white;
+	background-color: #e93a49;
+	border-radius: 100%;
+}
+.sales-footer>input{
+	width: 28%;
+	height: 34px;
+	position:absolute;
+	color:white;
+	font-size: 1.6rem;
+	border:none;
+	border-radius: 4px;
+	outline: none;
+}
+.sales-add-cart{
+	top:8px;
+	right:36%; 
+	background-color: #e59d33;
+}
+.sales-go-pay{
+	top:8px;
+	right:4%; 
+	background-color: #e73a49;
+}
+
+
+/****************  4.升级成为会员页面 begin：  *************/
+/*<!-- 4.1升级会员的弹窗： -->*/
+.upgrade-vip-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2014px;
+	z-index: 10;
+	display: none;
+}
+.upgrade-vip-mask-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 750px;
+	margin:0 auto;
+	background-color: rgba(0,0,0,0.6);
+}
+.upgrade-vip-alert{
+	position: absolute;
+	top:30%;
+	left: 10%;
+	width: 80%;
+	height: 24%;
+	padding-top: 30%;
+	background:url(../img/index-img/upgrade-vip-alert-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.upgrade-vip-alert>p{
+	font-size: 2.2rem;
+	color:#8a4d00;
+	text-align: center;
+}
+.upgrade-vip-alert>p>span{
+	color:#e80138;
+}
+#upgrade-vip-alert-pay{
+	display: block;
+	width: 43%;
+	height: 16%;
+	min-height: 26px;
+	margin:5.6% auto 0;
+	color:white;
+	font-size: 2.2rem;
+	border-radius: 12px;
+	background-color:#a3da42;
+	border:none;
+	outline: none;
+}
+/*<!-- 4.2升级会员的订单详情支付页面： -->*/
+.upgrade-vip-detail{
+	display: none;
+}
+.upgrade-vip-info{
+	background-color: white;
+}
+.upgrade-vip-info>p{
+	width: 94%;
+	font-size: 1.6rem;
+	margin:0 auto;
+	padding: 3% 0;
+	border-bottom:1px solid #e9eaeb;
+}
+.upgrade-vip-info>p>a:first-child{
+	float: left;
+}
+.upgrade-vip-info>p>a:last-child{
+	float: right;
+}
+.upgrade-vip-info>p>a{
+	color:#808182;
+	text-decoration: none;
+}
+.upgrade-vip-card{
+	padding:3%;
+}
+.upgrade-vip-card>img{
+	float: left;
+	width: 18.6%;
+}
+.upgrade-vip-card>div{
+	float: right;
+	width: 78%;
+}
+.upgrade-vip-card>div>p:first-child{
+	font-size: 1.6rem;
+	color:#808182;
+}
+.upgrade-vip-card>div>p:nth-child(2){
+	font-size: 1.4rem;
+	color:#7c7d7e;
+}
+.upgrade-vip-card>div>p:last-child{
+	font-size: 1.4rem;
+	color:#d60000;
+}
+#vip-pay-btn{
+	display: block;
+	width: 85.2%;
+	height: 66px;
+	font-size: 2.4rem;
+	margin:20px auto 0;
+	color:white;
+	background-color: #ec9119;
+	border:none;
+	border-radius: 6px;
+}
+/*<!-- 4.3升级会员的订单详情支付成功页面： -->*/
+.upgrade-vip-success{
+	display: none;
+}
+.upgrade-vip-pay-success>img{
+	display: block;
+	width: 26%;
+	margin: 14% auto 0;
+}
+.upgrade-vip-pay-success>p{
+	text-align: center;
+	font-size: 2.2rem;
+	color:#16181a;
+	margin-top:7.2%;
+}
+#vip-success-goshopping{
+	display: block;
+	width: 34%;
+	height: 50px;
+	margin: 20% auto 0;
+	color:white;
+	background-color: #e94347;
+	font-size: 2rem;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+}
+/*分享的弹窗 begin ：*/
+body>div.sales-share-mask-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 2014px;
+	display: none;
+}

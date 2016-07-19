@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-address.css">
+</head>
+<body>
+	<div class="my-address-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-address-back" class="get-back"></a>
+					<h3 class="cur-title">收货地址</h3>
+				</header>
+			</div>
+		</div>
+		<ul class="address-wrap">
+			<li>
+				<a href="javascript:void(0)" class="address-ceard">
+					<p>
+						<span class="name">刘晓心</span>
+						<span>13562021254</span>
+					</p>
+					<p>
+						<span class="default">[默认]</span>
+						<span>广州市天河区东圃时代TIT广场</span>
+					</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="address-ceard">
+					<p>
+						<span class="name">刘晓心</span>
+						<span>13562021254</span>
+					</p>
+					<p>
+						<span>广州市天河区东圃时代TIT广场</span>
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-address-back").on("click",function(){
+				location.href="my-index.html";
+			})
+			// 浏览器嗅探：navigator.userAgent
+			$(".address-wrap").on("click","a",function(){
+				var ua=navigator.userAgent.toLowerCase();//转换为小写
+				// location.href="my-address-change.html";
+				if(ua.indexOf("mobile")>-1){
+					// 移动端设备跳转的网页：
+					location.href="my-address-change-mobile.html";
+				}else{
+					// pc端设备跳转的网页：
+					location.href="my-address-change-pc.html";
+				}
+			})
+		})
+	</script>
+</body>
+</html>

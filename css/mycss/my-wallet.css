@@ -1,0 +1,143 @@
+body{
+	background-color: #eff0f1;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+/*************** 我的钱包页面 begin ：***************/
+img.my-wallet-icon{
+	display: block;
+	width: 22.2%;
+	 margin:14% auto 4%;
+}
+p.my-remain{
+	text-align: center;
+	color: #828384;
+	font-size: 1.4rem;
+}
+p.my-remain-money{
+	text-align: center;
+	font-size: 2.8rem;
+}
+ul.pay-way{
+	width: 94%;
+	border:1px solid #e6e7e8;
+	border-radius: 4px;
+	background-color: white;
+	margin:16% auto 13.2%;
+}
+
+.pay-way>li{
+	position:relative;
+	width: 94%;
+	height: 50px;
+	line-height: 50px;
+	margin:0 auto;
+	font-size: 1.6rem;
+	color: #3a3a3b;
+	border-bottom:2px solid #f2f3f4;
+}
+.pay-way>li:last-child{
+	border-bottom: none;
+}
+.pay-way>li>img{
+	width: 30px;
+	/*border: 1px solid red;*/
+	vertical-align: middle;
+	margin:0 2%;
+	background:url(../../img/myinfo-img/pay-way-icon.png) no-repeat;
+	background-size: 50px 150px;
+	background-position: -11px 0;
+}
+.pay-way>li>img.wx-pay-icon{
+	background-position: -11px -45px;
+}
+.pay-way>li:after{
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	/*border: 1px solid red;*/
+	position: absolute;
+	right: 12px;
+	top: 16px;
+	background:url(../../img/myinfo-img/pay-way-icon.png) no-repeat;
+	background-size: 50px 150px;
+	background-position: -15px -123px;
+}
+.pay-way>li.select-active:after{
+	background-position: -15px -91px;
+}
+a.pay-confirm-btn{
+	background-color: #31c18d;
+}
+/*************** 我的钱包页面 end ***************/
+/*************** 充值的页面 begin： ***************/
+ul.pay-wrap{
+	border:1px solid #e5e6e7;
+	margin-top:3.2%;
+}
+.pay-wrap>li{
+	height: 46px;
+	line-height: 46px;
+	font-size: 1.4rem;
+	background-color: white;
+}
+.pay-wrap>li:first-child{
+	border-bottom:2px solid #ddddde;
+}
+span.pay-icon{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	margin:0 2%;
+	background:url(../../img/myinfo-img/pay-way-icon.png) no-repeat;
+	background-size: 50px 150px;
+	background-position: -11px 0;
+}
+span.sum{
+	display: inline-block;
+	width: 30px;
+	height: 46px;
+	color: #6f6f70;
+	vertical-align: middle;
+	margin:0 2%;
+}
+.pay-wrap>li>input{
+	font-size: 1.4rem;
+	line-height: 46px;
+	border:none;
+	outline: none;
+}
+a.pay-recharge-confirm-btn{
+	background-color: #31c18d;
+}
+/*************** 充值的页面 end ***************/
+/*************** 账单的页面 begin： ***************/
+ul.month-log-wrap{
+	background-color: white;
+	font-size: 1.6rem;
+}
+.month-log-wrap>li{
+	box-sizing: border-box;
+	padding:0 2.6%;
+	padding-top: 4px;
+	min-height: 56px;
+	border-bottom:1px solid #e5e6e7;
+}
+.month-log-wrap>li.month-number{
+	background-color: #f1f2f3;
+	min-height: 38px;
+	line-height: 38px;
+}
+.month-log-wrap>li>p>span{
+	float: right;
+}
+p.date-details{
+	color: #595a5b;
+}
+/*************** 账单的页面 end ***************/
+

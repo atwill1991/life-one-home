@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-info.css">
+</head>
+<body>
+	<div class="my-info-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-info-back" class="get-back"></a>
+					<h3 class="cur-title">基本资料</h3>
+				</header>
+			</div>
+		</div>
+		<ul class="my-info-operate-list">
+			<li><a href="javascript:void(0)" class="my-icon-operate">头像<span></span></a></li>
+			<li><a href="javascript:void(0)" class="my-name-operate">姓名<span>李晓晓</span></a></li>
+			<li><a href="javascript:void(0)" class="my-vip-operate">会员标志<span></span></a></li>
+			<li><a href="javascript:void(0)" class="my-contact-operate">联系方式<span>136****1245</span></a></li>
+			<li><a href="javascript:void(0)" class="my-pwd-operate">修改密码<span></span></a></li>
+			<li><a href="javascript:void(0)" class="my-wallet-operate">修改钱包密码<span></span></a></li>
+			<li><a href="javascript:void(0)" class="my-supply-operate">我能供应<span></span></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-info-back").on("click",function(){
+				location.href="my-index.html";
+			})
+			$(".my-name-operate").on("click",function(){
+				location.href="my-info-name.html";
+			})
+			$(".my-contact-operate").on("click",function(){
+				location.href="my-info-contact.html";
+			})
+			$(".my-pwd-operate").on("click",function(){
+				location.href="my-info-pwd.html";
+			})
+			$(".my-wallet-operate").on("click",function(){
+				location.href="my-info-wallet.html";
+			})
+			$(".my-supply-operate").on("click",function(){
+				location.href="my-info-supply.html";
+			})
+		})
+	</script>
+</body>
+</html>

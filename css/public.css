@@ -1,0 +1,157 @@
+
+/*** 头部部分begin：***/
+.header-wrap,.header-container,.pub-header{
+	width: 100%;
+	height:46px;
+}
+.header-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.pub-header{
+	position: relative;
+	z-index: 10;
+	background-color: #ec9119;
+	color:white;
+	line-height: 46px;
+	text-align: center;
+	max-width: 750px;
+	margin:0 auto;
+}
+.pub-header>h3{
+	font-size: 2rem;
+	text-align: center;
+}
+.get-back{
+	position: absolute;
+	top:4px;
+	left: 18px;
+	display: inline-block;
+	width: 20px;
+	height:36px;
+	/*border: 1px solid red;*/
+	background: url(../img/index-img/go-back.png) no-repeat;
+	background-size: 12px 22px;
+	background-position: 3px 10px;
+}
+.get-back:active{
+	background: url(../img/index-img/go-back2.png) no-repeat;
+	background-size: 12px 22px;
+	background-position: 3px 10px;
+}
+.collect-btn,.share-btn{
+	position: absolute;
+	display: inline-block;
+	width: 46px;
+	height: 44px;
+}
+.collect-btn{
+	top: 0;
+	right: 66px;
+	/*border: 1px solid red;*/
+	background: url(../img/index-img/icon-star-collect.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 8px 6px;
+}
+.collect-btn:active{
+	background: url(../img/index-img/icon-star-collect2.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 8px 6px;
+}
+.share-btn{
+	top:0;
+	right: 12px;
+	/*border: 1px solid red;*/
+	background: url(../img/index-img/icon-share.png) no-repeat;
+	background-size: 28px 26px;
+	background-position: 10px 8px;
+}
+.share-btn:active{
+	background: url(../img/index-img/icon-share2.png) no-repeat;
+	background-size: 28px 26px;
+	background-position: 10px 8px;
+}
+a.font-btn{
+	position: absolute;
+	top: 0;
+	right: 3.2%;
+	text-decoration: none;
+	font-size: 1.8rem;
+	color: white;
+}
+/*** 头部部分 end ***/
+/*分享的弹窗 begin ：*/
+.sales-share-mask-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.sales-share-mask{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 750px;
+	margin:0 auto;
+	background-color: rgba(0,0,0,0.6);
+}
+.sales-share-alert{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	height: 36%;
+	background-color: white;
+	box-sizing: border-box;
+}
+.sales-share-alert>p{
+	font-size: 1.8rem;
+	text-align: center;
+	color:#1b1c1d;
+	padding-top:4%;
+	margin-bottom: 3.2%;
+}
+.sales-share-alert>ul>li{
+	float: left;
+	width: 33.3%;
+}
+.sales-share-alert>ul>li>img{
+	display: block;
+	width: 40%;
+	margin:0 auto;
+}
+.sales-share-alert>ul>li>p{
+	text-align: center;
+}
+.share-cancel-btn{
+	display: block;
+	width: 83.2%;
+	height: 18.2%;
+	margin:8% auto 0;
+	background-color: #cbcccd;
+	font-size: 1.8rem;
+	color:#252627;
+	border:none;
+	border-radius: 6px;
+	outline: none;
+}
+/*分享的弹窗 end ：*/
+/*** a标签的确认按钮样式 begin ：***/
+a.public-confirm-btn{
+	display: block;
+	text-decoration: none;
+	width: 86%;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	margin:0 auto;
+	font-size: 1.8rem;
+	color: white;
+	background-color: #ec9119;
+	border-radius: 6px;
+	margin:10% auto;
+}
+/*** a标签的确认按钮样式 end ***/

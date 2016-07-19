@@ -1,0 +1,212 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	height: 100%;
+	margin:0 auto;
+	background-color: #f1f2f3;
+}
+a.public-confirm-btn{
+	margin-bottom: 10%;
+}
+/**************************** 1.修改名字的页面的样式 begin ：***************************/
+.my-info-name{
+	display: block;
+	width: 94%;
+	height: 50px;
+	margin:6% auto 22%;
+	border:2px solid #ebecec;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding:20px;
+	font-size: 1.6rem;
+	color: #404142;
+}
+a.operate-confirm{
+	display: block;
+	text-decoration: none;
+	width: 86%;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	margin:0 auto;
+	font-size: 1.8rem;
+	color: white;
+	background-color: #ec9119;
+	border-radius: 6px;
+}
+/**************************** 1. 修改名字的页面的样式 end ：***************************/
+/**************************** 2. 修改联系方式的页面的样式 begin ：***************************/
+.my-info-contact{
+	display: block;
+	width: 94%;
+	height: 50px;
+	margin:6% auto 22%;
+	border:2px solid #ebecec;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding:20px;
+	font-size: 1.6rem;
+	color: #404142;
+}
+/**************************** 2. 修改联系方式的页面的样式 end ：***************************/
+/************************ 2.1 修改联系方式的页面的子页面之更改手机号码样式 begin ：****************/
+form.my-tel-contact-operate{
+	display: block;
+	position: relative;
+	width: 94%;
+	border:1px solid #eceded;
+	border-radius: 6px;
+	margin:5.2% auto 9.2%;
+}
+.my-tel-contact-operate>input{
+	display: block;
+	width: 100%;
+	height: 46px;
+	box-sizing: border-box;
+	padding:16px;
+	font-size: 1.8rem;
+	color:#707173;
+	outline: none;
+	border: none;
+}
+.my-tel-contact-operate>input:first-child{
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: 1px solid #eceded;
+}
+.my-tel-contact-operate>input:nth-child(2){
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+a.get-tel-code-btn{
+	position: absolute;
+	bottom: 5px;
+	right: 6px;
+	text-decoration: none;
+	width: 28%;
+	min-width: 110px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 1.8rem;
+	color: white;
+	background-color: #31c18d;
+	border-radius: 8px;
+}
+
+/************************ 2.1 修改联系方式的页面的子页面之更改手机号码样式 end ：****************/
+/**************************** 3. 修改密码的页面的样式 begin ：***************************/
+form.password-txt{
+	display: block;
+	width: 94%;
+	color: #6c6d6e;
+	border: 2px solid #ebeced;
+	border-radius: 4px;
+	background-color: white;
+	box-sizing: border-box;
+	padding:0 10px;
+	margin: 6% auto 3.2%;
+}
+form.password-txt>label{
+	float: left;
+	width: 35%;
+	height: 40px;
+	line-height: 44px;
+	font-size: 1.6rem;
+}
+form.password-txt>input{
+	float: right;
+	height: 40px;
+	line-height: 44px;
+	width: 65%;
+	border:none;
+	outline: none;
+	font-size: 1.6rem;
+}
+form.cur-password-txt{
+	height: 44px;
+	line-height: 44px;
+}
+form.new-password-txt>label:nth-of-type(1){
+	border-bottom: 1px solid #e7e8e9;
+}
+form.new-password-txt>input:nth-of-type(1){
+	border-bottom: 1px solid #e7e8e9;
+}
+p.change-pwd-tips{
+	width: 94%;
+	margin:3.2% auto 0;
+	color: #7a7b7c;
+	font-size: 1.2rem;
+}
+a.change-pwd-confirm{
+	margin-top:60%;
+}
+/**************************** 3. 修改密码的页面的样式 end ：***************************/
+/**************************** 4. 修改钱包密码的页面的样式 begin ：***************************/
+form.my-tel-contact-operate{
+	margin-bottom: 0;
+}
+a.change-wallet-pwd{
+	margin-top:50%;
+	margin-bottom: 10%;
+}
+
+/**************************** 4. 修改钱包密码的页面的样式 end ：***************************/
+/**************************** 5. 我能供应的页面的样式 begin ：***************************/
+form.my-supply-txt>label{
+	width: 30%;
+}
+form.my-supply-txt>input{
+	width: 70%;
+}
+form.supply-details-txt{
+	
+}
+form.supply-details-txt>label{
+}
+form.supply-details-txt>textarea{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	min-height: 90px;
+	resize: none;
+	color:#717273;
+}
+p.up-img-title{
+	width: 94%;
+	margin:0 auto;
+	color:#717273;
+	font-size: 1.8rem;
+	margin-bottom: 2%;
+}
+input.up-img-input{
+	display: none;
+}
+a.up-img-a-btn{
+	display: block;
+	width: 17.6%;
+	margin-left: 3%;
+}
+a.up-img-a-btn>img{
+	width: 100%;
+}
+.updata-img-wrap{
+	width: 94%;
+	margin:0 auto;
+}
+.updata-img-wrap>img{
+	width: 33%;
+	box-sizing: border-box;
+	padding:4px;
+}
+a.my-supply-confirm{
+	margin-top:30%;
+}
+/**************************** 5. 我能供应的页面的样式 end ：***************************/

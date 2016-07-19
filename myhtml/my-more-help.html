@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>更多</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-more-sibilings.css">
+</head>
+<body>
+	<div class="my-more-help-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-more-help-back" class="get-back"></a>
+					<h3 class="cur-title">帮助中心</h3>
+				</header>
+			</div>
+		</div>
+		<ul class="help-info-wrap">
+			<li>
+				<img src="../img/myinfo-img/serve-help-icon.png">
+			</li>
+			<li>周一至周五 8:00-6:00</li>
+			<li>4000-8888-08</li>
+			<li><a href="tel:10086">一键拨打</a></li>
+			<li>常见问题</li>
+		</ul>
+		<ul class="htlp-question-list">
+			<li><a href="javascript:void(0)" class="my-more-help-address">1.如何修改收货地址</a></li>
+			<li><a href="javascript:void(0)" class="my-more-help-pwd">2.如何修改密码</a></li>
+			<li><a href="javascript:void(0)" class="my-more-help-drawback">3.如何退款</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-more-help-back").on("click",function(){
+				location.href="my-more.html";
+			})
+			// 事件委托：
+			$(".htlp-question-list").on("click","a",function(){
+				location.href="my-more-help-question.html";
+			})
+		})
+	</script>
+</body>
+</html>

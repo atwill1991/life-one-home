@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>商家信息</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/shop-info-details.css">
+</head>
+<body>
+	<div class="shop-info-details-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="shop-info-details-back" class="get-back"></a>
+					<a href="javascript:void(0)" class="share-btn"></a>
+				</header>
+			</div>
+		</div>
+		<!-- 大图： -->
+		<div class="shop-details-bg-img-wrap">
+			<img src="img/index-img/shop-info-details-bg-img.png">
+			<a href="javascript:void(0)" class="shop-goods-title-info">
+				<h1>[番禺 华南] 星力时代豪庭</h1>
+				<p>番禺地铁大盘低首付5万起送入户花园，4万抵10万抢
+购中,市场均价：住宅  12800元/㎡</p>
+			</a>
+		</div>
+		<div class="shop-details-card clearfix">
+			<img src="img/index-img/shop-info-icon.png" class="shop-left-icon">
+			<ul class="shop-right-info">
+				<li>九江康瑞地产</li>
+				<li>地址：天河南路123号</li>
+				<li>
+					<a href="tel:10086">400 890 2828</a>
+					转
+					<a href="tel:1008611">60852</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shop-details-bg-img-container">
+			<img src="img/index-img/shop-info-details-bg-img2.png">
+		</div>
+		<!-- 右上角的分享按钮点击后出现的页面： -->
+		<div class="sales-share-mask-wrap">
+			<div class="sales-share-mask">
+				<div class="sales-share-alert">
+					<p>分享到</p>
+					<ul class="clearfix">
+						<li>
+							<img src="img/index-img/icon-weixin.png">
+							<p>微信好友</p>
+						</li>
+						<li>
+							<img src="img/index-img/icon-ShareTimeline.png">
+							<p>微信朋友圈</p>
+						</li>
+						<li>
+							<img src="img/index-img/icon-sina.png">
+							<p>新浪微博</p>
+						</li>
+					</ul>
+					<input type="button" value="取消" class="share-cancel-btn"> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#shop-info-details-back").on("click",function(){
+				location.href="index-shop-info.html";
+			})
+			// 右上角的分享按钮的事件：
+			$(".share-btn").on("click",function(){
+				$(".sales-share-mask-wrap").show();
+			})
+			$(".share-cancel-btn").on("click",function(){
+				$(".sales-share-mask-wrap").hide();
+			})
+		})
+	</script>
+</body>
+</html>

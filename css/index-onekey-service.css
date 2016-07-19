@@ -1,0 +1,88 @@
+body{
+	background-color: #f1f2f3;
+}
+.onekey-service-page{
+	width: 100%;
+	max-width: 750px;
+}
+p.contact-tips{
+	width: 90%;
+	margin:3% auto;
+	font-size: 1.6rem;
+	color: #6f7071;
+}
+form.user-contact-info{
+	display: block;
+	width:90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #e4e5e5;
+	background-color: white;
+	color: #919294;
+}
+.user-contact-info>input{
+	display: block;
+	width:90%;
+	margin:0 auto;
+	border:none;
+	height:46px;
+	font-size: 1.6rem;
+}
+.user-contact-info>input:first-child{
+	border-bottom: 1px solid #e6e7e8;
+}
+form.user-need-info{
+	width: 90%;
+	margin: 0 auto;
+}
+form.user-need-info>label{
+	display: block;
+	font-size: 1.6rem;
+	color: #6f7071;
+	margin:8% 0 3.2%;
+}
+form.user-need-info>input{
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px solid #e4e5e5;
+	box-sizing: border-box;
+	padding: 4%;
+	font-size: 1.6rem;
+}
+form.user-need-info>textarea{
+	width: 100%;
+	height: 300px;
+	resize: none;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	box-sizing: border-box;
+	padding:4%;
+	outline: none;
+	border: 1px solid #e4e5e5; 
+	border-radius: 4px;
+}
+p.tips-user-info{
+	width: 90%;
+	margin: 3% auto 0;
+	font-size: 1.6rem;
+	line-height: 2.6;
+	color: #6f7071;
+	box-sizing: border-box;
+	padding-left: 36px;
+	background:url(../img/index-img/icon-alert.png) no-repeat;
+	background-size: 30px 30px;
+	/*background-position: 1px 1px;*/
+}
+.user-need-submit-btn{
+	display: block;
+	width: 82%;
+	height: 60px;
+	color: white;
+	background-color: #ec9119;
+	border:none;
+	border-radius: 6px;
+	margin:12% auto;
+	font-size: 2.2rem;
+}

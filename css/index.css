@@ -1,0 +1,596 @@
+body{
+	background-color: #f1f2f3;
+}
+/*body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}*/
+#index-page{
+	/*display: none;*/
+}
+.ind-header{
+	width: 100%;
+	height:46px;
+}
+.index-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:46px;
+	z-index: 10;
+	background-color: #ec9119;
+	color:white;
+	font-size: 2rem;
+	line-height: 46px;
+	text-align: center;
+}
+.index-header>h1{
+	display: inline-block;
+}
+#index-location{
+	float: left;
+	margin-left: 18px;
+	position: relative;
+}
+#index-location:after{
+	position: absolute;
+	top:16px;
+	right: -30px;
+	content: '';
+	display: block;
+	width:22px;
+	height: 12px;
+	background: url(../img/index-img/angle-bottom.png) no-repeat;
+	background-size:100% 100%;
+}
+#index-search{
+	float: right;
+	width: 30px;
+	height: 30px;
+	background: url(../img/index-img/search.png) no-repeat;
+	background-size:100% 100%;
+	margin-top:10px;
+	margin-right: 18px;
+}
+/*swiper大图滚动 begin:*/
+.icon-roll{
+	width:100%;
+	position: relative;
+	margin:0 auto;
+}
+.icon-roll>img{
+	width: 100%;
+	visibility: hidden;
+}
+.swiper-container{
+	position:absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}
+.pagination{
+	position: absolute;
+	left: 0;
+	bottom:5px;
+	text-align: center;
+	width: 100%;
+}
+.swiper-pagination-switch{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #9f9fa0;
+	box-shadow: 0px 1px 2px #555 inset;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.swiper-active-switch{
+	background-color: #f09753;
+}
+/*swiper大图滚动 end*/
+.wrap{
+	width: 96%;
+	margin:12px auto 0;
+}
+.index-left{
+	float: left;
+	width: 31.4%;
+}
+.index-left>img{
+	width: 100%;
+}
+.index-right{
+	float: left;
+	width: 68%;
+}
+.index-right>img{
+	float: left;
+	width: 48%;
+	margin-left:2%;
+}
+.index-right>img:first{
+	margin-bottom: 2%;
+}
+.index-right>img:nth-child(2){
+	margin-bottom: 2%;
+}
+/*特卖区 begin：*/
+.sales{
+	position: relative;
+	width:96%;
+	font-size:1.8rem;
+	color:#7f8081;
+	text-align: center;
+	margin:20px auto;
+}
+.sales:before,.sales:after{
+	content: '';
+	display: inline-block;
+	width: 40%;
+	border-top:1px solid #dadbdc;
+	position: absolute;
+	top:12px;
+}
+.sales:before{
+	left: 0;
+}
+.sales:after{
+	right: 0;
+}
+.container{
+	width: 96%;
+	margin:0 auto;
+}
+.container>li{
+	background-color: white;
+	font-size: 1.6rem;
+	margin-bottom: 12px;
+	box-shadow: -1px -1px 2px rgba(0,0,0,0.6);
+}
+.container>li>img{
+	width: 100%;
+}
+/*底部切换：*/
+footer.index-footer{
+	width: 100%;
+	height:56px;
+}
+ul.ind-footer{
+	position: fixed;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	height:56px;
+	background-color: white;
+}
+ul.ind-footer>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-size: 1.4rem;
+	color:#7e7e7f;
+	padding-top:4px;
+}
+ul.ind-footer>li>a{
+	display: block;
+	margin:0 auto;
+	text-decoration: none;
+}
+ul.ind-footer>li.active>a{
+	color:#ed8fe8;
+}
+ul.ind-footer>li:before{
+	content: '';
+	display: block;
+	margin:0 auto;
+	width: 30px;
+	height: 28px;
+	background: url(../img/index-img/index-icon.png) no-repeat;
+	background-size: 150px 60px;
+}
+ul.ind-footer>li:nth-child(1):before{
+	background-position: -1% -4%;
+}
+ul.ind-footer>li:nth-child(2):before{
+	background-position: 25% -4%;
+}
+ul.ind-footer>li:nth-child(3):before{
+	background-position: 52% -4%;
+}
+ul.ind-footer>li:nth-child(4):before{
+	background-position: 77% -4%;
+}
+ul.ind-footer>li:nth-child(5):before{
+	background-position: 105% -4%;
+}
+ul.ind-footer>li.index-page.active:before{
+	background-position: -1% 102%;
+}
+ul.ind-footer>li.vip.active:before{
+	background-position: 25% 104%;
+}
+ul.ind-footer>li.sort.active:before{
+	background-position: 52% 103%;
+}
+ul.ind-footer>li.cart.active:before{
+	background-position: 77% 104%;
+}
+ul.ind-footer>li.info.active:before{
+	background-position: 105% 104%;
+}
+/****************    首页页面 end：    ****************/
+/****************    位置信息的页面 begin：    ****************/
+#index-location-page{
+	display: none;
+}
+/*** 头部部分begin：***/
+.header-container,.pub-header{
+	width: 100%;
+	height:46px;
+}
+.pub-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #ec9119;
+	color:white;
+	font-size: 2rem;
+	line-height: 46px;
+	text-align: center;
+}
+.pub-header>h3{
+	display: inline-block;
+}
+.get-back{
+	position: absolute;
+	top:6px;
+	left: 18px;
+	display: inline-block;
+	width: 20px;
+	height:36px;
+	/*border: 1px solid red;*/
+	background: url(../img/index-img/go-back.png) no-repeat;
+	background-size: 14px 26px;
+	background-position: 3px 4px;
+}
+/*** 头部部分 end ***/
+dl.location{
+	width: 100%;
+}
+dl>dd,dl>dt{
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.6rem;
+	text-indent: 1.6rem;
+	border-bottom:1px solid #e2e3e4;
+}
+.location-list{
+	background-color:#e5e6e7;
+}
+.location-list-info dd:active {
+	background-color:#e5e6e7;
+}
+/****************    位置信息的页面 end：    ****************/
+/****************  商品关键字搜索页面 begin：  *************/
+#index-search-page{
+	display: none;
+}
+#search-frame{
+	display: block;
+	width:96%;
+	height: 60px;
+	margin: 0 auto;
+	border:1px solid #e4e4e4;
+	border-radius: 30px;
+	padding:10px 10px 10px 66px;
+	box-sizing: border-box;
+	margin-top:20px;
+	font-size: 2rem;
+	background: white url(../img/index-img/search-fdj.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 20px 16px;
+}
+/*<!-- 搜索前的显示： -->*/
+.search-before{
+	/*display: none;*/
+}
+.hot-search{
+	text-align: center;
+	line-height: 3;
+	font-size: 2rem;
+	color:#919191;
+}
+ul.search-info{
+	width:96%;
+	margin: 0 auto;
+}
+ul.search-info>li{
+	float: left;
+	background-color:white;
+	width:20%;
+	height: 36px;
+	border:1px solid #e4e4e4;
+	border-radius: 18px;
+	box-sizing: border-box;
+	margin: 2% 2.5%;
+}
+ul.search-info>li>a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center; 
+	font-size: 1.4rem;
+	color:#9f9f9f;
+}
+ul.search-info>li>a:active{
+	background-color: #e5e6e7;
+}
+/*<!-- 搜索时，并返回结果时显示： -->*/
+ul.search-result{
+	display: none;
+	background-color: white;
+	padding-top: 4%;
+	margin-top: 4%;
+	min-height: 260px;
+}
+ul.search-result>li{
+	width: 96%;
+	margin:0 auto 4%;
+}
+ul.search-result>li>a{
+	text-decoration: none;
+}
+.food-img{
+	float: left;
+	width: 20%;
+	background-color: #f2f2f2;
+	border: 1px solid #f1f1f1;
+}
+.food-img>img{
+	width: 100%;
+	height: 100%;
+}
+.food-info{
+	float:left;
+	width: 77%;
+	margin-left: 2%;
+}
+.food-info>h3{
+	width: 70%;
+	font-size: 1.6rem;
+	margin-top: 6px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+span.food-price{
+	color:#d60000;
+	font-size: 1.4rem;
+	line-height: 2;
+}
+/*<!-- 搜索后，无返回结果时显示： -->*/
+.not-find{
+	display: none;
+	margin-top: 19.2%;
+}
+.not-find>img{
+	display: block;
+	width: 18.6%;
+	margin: 0 auto;
+	margin-bottom: 4%;
+}
+.not-find>p{
+	color: #a7a7a7;
+	font-size: 1.6rem;
+	text-align: center;
+	line-height: 2;
+}
+#write-msg{
+	display: block;
+	width: 200px;
+	height: 68px;
+	margin:6% auto 0;
+	font-size: 3rem;
+	color: #999;
+	background-color: #eaeaea;
+	border: 1px solid #e2e2e2;
+	border-radius: 4px;
+	outline: none;
+}
+.msg-mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+.msg-mask>.msg-alert{
+	position: absolute;
+	top:100px;
+	left: 20px;
+	width: 90%;
+	height: 52%;
+	background-color: white;
+}
+.msg-alert>p{
+	height: 36px;
+	line-height: 36px;
+	background-color: #f2f2f2;
+	font-size: 2rem;
+	color:#aaa;
+}
+.msg-alert>p>span{
+	margin-left: 26px;
+}
+.msg-alert>p>a{
+	float: right;
+	margin-right: 26px;
+}
+.msg-alert>p>a>img{
+	width: 20px;
+	height: 20px;
+}
+.write-txt{
+	display: block;
+	width: 90%;
+	height: 64%;
+	margin:3.6% auto 6%;
+	border: 1px solid #e5e5e5;
+	outline: none;
+	resize: none;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	padding:2.6%;
+}
+#msg-submit-btn{
+	display: block;
+	width: 24%;
+	height: 7.2%;
+	margin:0 auto;
+	color: white;
+	text-align: center;
+	background-color: #ed952d;
+	border: none;
+	border-radius: 4px;
+}
+/****************  商品关键字搜索页面 begin：  *************/
+/****************  4.升级成为会员页面 begin：  *************/
+/*<!-- 4.1升级会员的弹窗： -->*/
+.upgrade-vip-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	display: none;
+}
+.upgrade-vip-alert{
+	position: absolute;
+	top:30%;
+	left: 10%;
+	width: 80%;
+	height: 24%;
+	padding-top: 30%;
+	background:url(../img/index-img/upgrade-vip-alert-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.upgrade-vip-alert>p{
+	font-size: 2.2rem;
+	color:#8a4d00;
+	text-align: center;
+}
+.upgrade-vip-alert>p>span{
+	color:#e80138;
+}
+#upgrade-vip-alert-pay{
+	display: block;
+	width: 43%;
+	height: 16%;
+	min-height: 26px;
+	margin:5.6% auto 0;
+	color:white;
+	font-size: 2.2rem;
+	border-radius: 12px;
+	background-color:#a3da42;
+	border:none;
+	outline: none;
+}
+/*<!-- 4.2升级会员的订单详情支付页面： -->*/
+.upgrade-vip-detail{
+	display: none;
+}
+.upgrade-vip-info{
+	background-color: white;
+}
+.upgrade-vip-info>p{
+	width: 94%;
+	font-size: 1.6rem;
+	margin:0 auto;
+	padding: 3% 0;
+	border-bottom:1px solid #e9eaeb;
+}
+.upgrade-vip-info>p>a:first-child{
+	float: left;
+}
+.upgrade-vip-info>p>a:last-child{
+	float: right;
+}
+.upgrade-vip-info>p>a{
+	color:#808182;
+	text-decoration: none;
+}
+.upgrade-vip-card{
+	padding:3%;
+}
+.upgrade-vip-card>img{
+	float: left;
+	width: 18.6%;
+}
+.upgrade-vip-card>div{
+	float: right;
+	width: 78%;
+}
+.upgrade-vip-card>div>p:first-child{
+	font-size: 1.6rem;
+	color:#808182;
+}
+.upgrade-vip-card>div>p:nth-child(2){
+	font-size: 1.4rem;
+	color:#7c7d7e;
+}
+.upgrade-vip-card>div>p:last-child{
+	font-size: 1.4rem;
+	color:#d60000;
+}
+#vip-pay-btn{
+	display: block;
+	width: 85.2%;
+	height: 66px;
+	font-size: 2.4rem;
+	margin:20px auto 0;
+	color:white;
+	background-color: #ec9119;
+	border:none;
+	border-radius: 6px;
+}
+/*<!-- 4.3升级会员的订单详情支付成功页面： -->*/
+.upgrade-vip-success{
+	display: none;
+}
+.upgrade-vip-pay-success>img{
+	display: block;
+	width: 26%;
+	margin: 14% auto 0;
+}
+.upgrade-vip-pay-success>p{
+	text-align: center;
+	font-size: 2.2rem;
+	color:#16181a;
+	margin-top:7.2%;
+}
+#vip-success-goshopping{
+	display: block;
+	width: 34%;
+	height: 50px;
+	margin: 20% auto 0;
+	color:white;
+	background-color: #e94347;
+	font-size: 2rem;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+}
+/****************  4.升级成为会员页面 end：  *************/
+
+

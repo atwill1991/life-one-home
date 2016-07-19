@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-wallet.css">
+</head>
+<body>
+	<div class="my-wallet-recharge-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-wallet-recharge-back" class="get-back"></a>
+					<h3 class="cur-title">充值</h3>
+				</header>
+			</div>
+		</div>
+		<ul class="pay-wrap">
+			<li >
+				<span class="pay-icon"></span>
+				支付宝
+			</li>
+			<li>
+				<span class="sum">金额</span>
+				<input type="text" class="recharge-sum" placeholder="请输入充值金额"> 
+			</li>
+		</ul>
+		<a href="javascript:void(0)" class="public-confirm-btn pay-recharge-confirm-btn">下一步</a>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-wallet-recharge-back").on("click",function(){
+				location.href="my-wallet.html";
+			})
+			
+			$(".pay-recharge-confirm-btn").on("click",function(){
+				location.href="my-wallet-recharge-log.html";
+			})
+		})
+	</script>
+</body>
+</html>

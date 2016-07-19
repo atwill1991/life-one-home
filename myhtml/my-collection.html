@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-collection.css">
+</head>
+<body>
+	<div class="my-collection-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-collection-back" class="get-back"></a>
+					<h3 class="cur-title">我的收藏</h3>
+					<a href="javascript:void(0)" class="font-btn">编辑</a>
+				</header>
+			</div>
+		</div>
+		<ul class="collection-goods-wrap">
+			<li class="goods-info-wrap">
+				<a href="javascript:void(0)" class="goods-card clearfix">
+					<img src="../img/index-img/search-food1.png" class="left" class="left">
+					<div class="right">
+						<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+						<p class="goods-price">&yen;29.5</p>
+					</div>
+				</a>
+			</li>
+			<li class="goods-info-wrap">
+				<a href="javascript:void(0)" class="goods-card clearfix">
+					<img src="../img/index-img/search-food1.png" class="left" class="left">
+					<div class="right">
+						<h3>坚果特产山核桃奶油味碧根坚果特产山核桃奶油味碧根</h3>
+						<p class="goods-price">&yen;29.5</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="footer-container">
+			<div class="footer-inner">
+				<footer class="footer-wrap">
+					<span class="select-all-btn">全选</span>
+					<a href="javascript:void(0)" class="public-confirm-btn log-delete-btn">删除</a>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var flag=true;
+			$("#my-collection-back").on("click",function(){
+				location.href="my-index.html";
+			})
+			$(".font-btn").on("click",function(){
+				if(flag){
+					flag=false;
+					$(".font-btn").text("完成");
+					$(".goods-info-wrap").addClass("add-select");
+					$(".footer-container").show();
+				}else{
+					flag=true;
+					$(".font-btn").text("编辑");
+					$(".goods-info-wrap").removeClass("add-select");
+					$(".footer-container").hide();
+				}
+				
+			})
+			$(".collection-goods-wrap").on("click",".add-select",function(){
+				$(this).toggleClass("select-active");
+			})
+			$(".log-delete-btn").on("click",function(){
+				$(".select-active").remove();
+			})
+			$(".select-all-btn").on("click",function(){
+				$(this).toggleClass("select-active");
+				$(".add-select").toggleClass("select-active");
+			})
+		})
+	</script>
+</body>
+</html>

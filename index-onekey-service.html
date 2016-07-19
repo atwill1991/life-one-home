@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>一键客服</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/index-onekey-service.css">
+</head>
+<body>
+	<div class="onekey-service-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="onekey-service-back-btn" class="get-back"></a>
+					<h3 class="cur-title">一键客服</h3>
+				</header>
+			</div>
+		</div>
+		<p class="contact-tips">联系信息：</p>
+		<form class="user-contact-info">
+			<input type="text" placeholder="姓名："></input>
+			<input type="text" placeholder="联系方式："></input>
+		</form>
+		<form class="user-need-info">
+			<label>需求类型：</label>
+			<input type="text" placeholder="输入商业合作/商品入驻/广告加盟等需求类型">
+			<label>需求描述</label>
+			<textarea name="" id="" placeholder="请根据需求类型，输入详细的合作模式（如：商品入驻，请注明具体商品、数量等），平台会在第一时间与您进行沟通联系。"></textarea> 
+		</form>
+		<p class="tips-user-info">需求提交后，平台会在第一时间与您联系。</p>
+		<input type="button" value="提交" class="user-need-submit-btn"> 
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#onekey-service-back-btn").on("click",function(){
+				location.href="index.html";
+			})
+			$(".user-need-submit-btn").on("click",function(){
+				// 提交用户需求信息
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-address.css">
+</head>
+<body>
+	<div class="my-address-change-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-address-change-back" class="get-back"></a>
+					<h3 class="cur-title">收货地址</h3>
+					<a href="javascript:void(0)" class="font-btn">编辑</a>
+				</header>
+			</div>
+		</div>
+		<ul class="address-info-wrap">
+			<li>
+				<span>收货人姓名</span>
+				<input type="text"> 
+			</li>
+			<li>
+				<span>联系电话</span>
+				<input type="text"> 
+			</li>
+			<li class="address-info clearfix">
+				<span>城市：</span>
+				<p class="clearfix">
+					<span class="province-value">选择省级</span>
+					<span class="city-value">选择城市</span>
+					<span class="county-value">选择区</span>
+				</p>
+			</li>
+			<li class="address-details">
+				<input type="text" placeholder="小区、街道、门牌等详细信息"> 	
+			</li>
+			<li class="default-address-set clearfix">
+				设为默认地址
+				<span class="default-address-set-btn"></span>
+			</li>
+		</ul>
+		<a href="javascript:void(0)" class="public-confirm-btn confirm-btn">确认</a>
+		<!-- /*点击编辑时，出现的选择地址的蒙层和内容：*/ -->
+		<div class="mask-container">
+			<div class="mask-inner">
+				<p class="handle-btn clearfix">
+					<a href="javascript:void(0)" class="handle-cancel-btn">取消</a>
+					<a href="javascript:void(0)" class="handle-confirm-btn">确认</a>
+				</p>
+				<ul class="address-select-wrap clearfix">
+					<li>
+						<ul id="province-list">
+							<li>湖北</li>
+							<li>湖南</li>
+							<li>广东</li>
+							<li>北京</li>
+							<li>香港</li>
+							<li>河南</li>
+						</ul>
+					</li>
+					<li>省</li>
+					<li>
+						<ul id="city-list">
+							<li>贵阳</li>
+							<li>桂林</li>
+							<li>广州</li>
+							<li>深圳</li>
+							<li>潮州</li>
+							<li>郑州</li>
+						</ul>
+					</li>
+					<li>市</li>
+					<li>
+						<ul id="county-list">
+							<li>白云</li>
+							<li>海珠</li>
+							<li>天河</li>
+							<li>黄埔</li>
+							<li>番禺</li>
+							<li>越秀</li>
+						</ul>
+					</li>
+					<li>区</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/china.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-address-change-back").on("click",function(){
+				location.href="my-address.html";
+			})
+			$(".default-address-set-btn").on("click",function(){
+				$(this).toggleClass("setActive");
+			})
+			//将字符串格式的json数据转换成对象:
+			console.log(JSON.parse(chinaArea))
+			var addressArea=JSON.parse(chinaArea);
+			var proIndex=0;
+			var citIndex=0;
+			var couIndex=0;
+			var provinceList=document.getElementById("province-list");
+			var cityList=document.getElementById("city-list");
+			var countyList=document.getElementById("county-list");
+			// 省的拖拽：
+			provinceList.innerHTML="";//清除原来的省得信息
+			var provinceArr=addressArea.china.province;//数组
+			// 省的数据的遍历：
+			for(var i=0;i<provinceArr.length;i++){
+				var li=document.createElement("li");
+				li.innerText=provinceArr[i]["-name"];
+				provinceList.appendChild(li);
+			}
+			// 市的数据的遍历的函数：
+			function cityData(){
+				cityList.innerHTML="";//清除原来的市的信息
+				// 遍历市的数据：
+				for(var j=0;j<provinceArr[proIndex].city.length;j++){
+					var li=document.createElement("li");
+					li.innerHTML=provinceArr[proIndex].city[j]["-name"];
+					cityList.appendChild(li);
+				}
+			}
+			// 区、县的数据的遍历的函数：
+			function countyData(){
+				countyList.innerHTML="";//清除原来的区、县的信息
+				var countyArr=provinceArr[proIndex].city[citIndex].county;
+				for(var k=0;k<countyArr.length;k++){
+					var li=document.createElement("li");
+					li.innerHTML=countyArr[k]["-name"];
+					countyList.appendChild(li);
+				}
+			}
+			var provinceLi=document.querySelectorAll("#province-list>li");
+			var provinceValue="广东";
+			provinceList.onmousedown=function(e){
+				var beginTop = provinceList.offsetTop;
+				var e=e||window.event;
+				var oY=e.clientY-beginTop;
+				var liNumb=$("#province-list>li").length;
+				// console.log(liNumb)
+				document.onmousemove=function(e){
+					var e=e||window.event;
+					var oTop=e.clientY-oY;
+					var num=parseInt(oTop/44);
+					if(oTop/22!=0){
+						if(parseInt(oTop/44)>=2){
+							num=2;
+						}
+						if(parseInt(oTop/44)<=2-liNumb){
+							num=3-liNumb;
+						}
+						provinceList.style.top=num*44+"px";
+						provinceValue=$("#province-list>li").eq(2-num).text();
+						proIndex=2-num;
+						cityData();
+						countyData();
+					}else{
+						provinceList.style.top=beginTop+"px";
+					}
+				}
+				document.onmouseup=function(){
+					document.onmousemove=null;
+				}
+			}
+			// 市的拖拽：
+			
+			var cityLi=document.querySelectorAll("#city-list>li");
+			var cityValue="广东";
+			cityList.onmousedown=function(e){
+				var beginTop = cityList.offsetTop;
+				var e=e||window.event;
+				var oY=e.clientY-beginTop;
+				var liNumb=$("#city-list>li").length;
+				// console.log(liNumb)
+				document.onmousemove=function(e){
+					var e=e||window.event;
+					var oTop=e.clientY-oY;
+					var num=parseInt(oTop/44);
+					if(oTop/22!=0){
+						if(parseInt(oTop/44)>=2){
+							num=2;
+						}
+						if(parseInt(oTop/44)<=2-liNumb){
+							num=3-liNumb;
+						}
+						cityList.style.top=num*44+"px";
+						cityValue=$("#city-list>li").eq(2-num).text();
+						citIndex=2-num;
+						countyData();
+					}else{
+						cityList.style.top=beginTop+"px";
+					}
+				}
+				document.onmouseup=function(){
+					document.onmousemove=null;
+				}
+			}
+			// 区、县的拖拽：
+			
+			var countyLi=document.querySelectorAll("#county-list>li");
+			var countyValue="广东";
+			countyList.onmousedown=function(e){
+				var beginTop = countyList.offsetTop;
+				var e=e||window.event;
+				var oY=e.clientY-beginTop;
+				var liNumb=$("#county-list>li").length;
+				// console.log(liNumb)
+				document.onmousemove=function(e){
+					var e=e||window.event;
+					var oTop=e.clientY-oY;
+					var num=parseInt(oTop/44);
+					if(oTop/22!=0){
+						if(parseInt(oTop/44)>=2){
+							num=2;
+						}
+						if(parseInt(oTop/44)<=2-liNumb){
+							num=3-liNumb;
+						}
+						countyList.style.top=num*44+"px";
+						countyValue=$("#county-list>li").eq(2-num).text();
+					}else{
+						countyList.style.top=beginTop+"px";
+					}
+				}
+				document.onmouseup=function(){
+					document.onmousemove=null;
+				}
+			}
+			$(".address-info").on("click",function(){
+				$(".mask-container").show();
+			})
+			$(".handle-cancel-btn").on("click",function(){
+				$(".mask-container").hide();
+			})
+			$(".handle-confirm-btn").on("click",function(){
+				$(".province-value").text(provinceValue);
+				$(".city-value").text(cityValue);
+				$(".county-value").text(countyValue);
+				$(".mask-container").hide();
+			})
+		})
+			
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>更多</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-more.css">
+</head>
+<body>
+	<div class="my-more-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-more--back" class="get-back"></a>
+					<h3 class="cur-title">更多</h3>
+				</header>
+			</div>
+		</div>
+		<ul class="my-more-list">
+			<li>
+				<a href="javascript:void(0)" class="my-more-about">关于我们<span></span></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="my-more-help">帮助中心<span></span></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="my-more-opinion">意见反馈<span></span></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" class="my-more-version">版本更新<span>5.02</span></a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-more--back").on("click",function(){
+				location.href="my-index.html";
+			})
+			$(".my-more-about").on("click",function(){
+				location.href="my-more-about.html";
+			})
+			$(".my-more-help").on("click",function(){
+				location.href="my-more-help.html";
+			})
+			$(".my-more-opinion").on("click",function(){
+				location.href="my-more-opinion.html";
+			})
+			$(".my-more-version").on("click",function(){
+				// location.href="";
+			})
+		})
+	</script>
+</body>
+</html>

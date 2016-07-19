@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>sales-phone-details-page</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/index-life-info-details-public.css">
+	<link rel="stylesheet" type="text/css" href="css/index-life-home-info-details.css">
+</head>
+<body>
+	<div class="sales-phone-details-page">
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="get-life-back" class="get-back"></a>
+					<a href="javascript:void(0)" class="collect-btn"></a>
+					<a href="javascript:void(0)" class="share-btn"></a>
+				</header>
+			</div>
+		</div>
+		<div class="goods-bg-img">
+			<img src="img/index-img/women-goods1.png">
+		</div>
+		<div class="sales-info">
+			<h2 class="goods-title">沃之沃 多功能内衣袜子内裤收纳盒内衣盒六件套</h2>
+			<p class="sales-goods-price clearfix">
+				<span>￥ 11.5</span>
+				<span>原价：<span>¥ 12.8</span></span>
+				<span>销量：<span>1235</span></span>
+			</p>
+			<p class="sales-count-down clearfix">
+				<span class="goods-count-down-time">限时：1天2小时23分02秒</span>
+				<span class="goods-count-down-number"><span>限量：120件</span></span>
+			</p>
+		</div>
+		<div class="sales-goods-wrap">
+			<ul class="detail-title clearfix">
+				<li class="goods-detail-btn">商品详情</li>
+				<li class="user-assess-btn">用户评价</li>
+				<div class="bottom-slide"></div>
+			</ul>
+			<div class="goods-detail-wrap">
+				<img src="img/index-img/index-life-home-info-img.png">
+				<p>文字说明。。。文字说明。。。文字说明。。。文字说明。。。文字说明。。。</p>
+			</div>
+			<div class="user-assess-wrap">
+				<ul class="user-assess">
+					<li class="clearfix">
+						<span class="user-name">会飞的鱼</span>
+						<span class="user-score"><img src="img/index-img/sales-user-scroe.png"></span>
+						<span class="date-info">2016-7-13</span>
+					</li>
+					<li class="user-assess-info">沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发，沙发</li>
+				</ul>
+				<ul class="user-assess">
+					<li class="clearfix">
+						<span class="user-name">小球</span>
+						<span class="user-score"><img src="img/index-img/sales-user-scroe.png"></span>
+						<span class="date-info">2016-7-15</span>
+					</li>
+					<li class="user-assess-info">物美价廉，质量不错</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="sales-footer-wrap">
+			<div class="sales-footer-container">
+				<footer class="sales-footer clearfix">
+					<div class="footer-icon-cart"><span class="cart-goods-number">0</span></div>
+					<input type="button" value="加入购物车" class="sales-add-cart">
+					<input type="button" value="立即购买" class="sales-go-pay">  
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!-- 4.升级成为会员页面： -->
+		<!-- 4.1升级会员的弹窗： -->
+		<div class="upgrade-vip-mask">
+			<div class="upgrade-vip-mask-inner">
+				<div class="upgrade-vip-alert">
+					<p>充值<span>￥100</span>升级VIP会员</p>
+					<p>立刻享受惊爆优惠价</p>
+					<input type="button" id="upgrade-vip-alert-pay" value="立即充值"> 
+				</div>
+			</div>
+		</div>
+		<!-- 4.2升级会员的订单详情支付页面： -->
+		<div class="upgrade-vip-detail">
+			<div class="header-container">
+				<header class="pub-header">
+					<a href="javascript:void(0)" id="upgrade-vip-detail-back" class="get-back"></a>
+					<h3 class="cur-title">订单详情</h3>
+				</header>
+			</div>
+			<div class="upgrade-vip-info">
+				<p class="clearfix">
+					<a href="javascript:void(0)">购买商品</a>
+					<a href="javascript:void(0)">代付款</a>
+				</p>
+				<div class="upgrade-vip-card clearfix">
+					<img src="img/index-img/vip-detail-img.png">
+					<div>
+						<p>升级成为VIP会员</p>
+						<p>期限为一年</p>
+						<p>￥100</p>
+					</div>
+				</div>
+			</div>
+			<input type="button" id="vip-pay-btn" value="立即支付"> 
+		</div>
+		<!-- 4.3升级会员的订单详情支付成功页面： -->
+		<div class="upgrade-vip-success">
+			<div class="header-container">
+				<header class="pub-header">
+					<a href="javascript:void(0)" id="upgrade-vip-success-back" class="get-back"></a>
+					<h3 class="cur-title">支付成功</h3>
+				</header>
+			</div>
+			<div class="upgrade-vip-pay-success">
+				<img src="img/index-img/vip-pay-success.png">
+				<p>恭喜您成为VIP会员</p>
+				<input type="button" id="vip-success-goshopping" value="继续购物"> 
+			</div>
+		</div>
+		<!-- 右上角的分享按钮点击后出现的页面： -->
+		<div class="sales-share-mask-wrap">
+			<div class="sales-share-mask">
+				<div class="sales-share-alert">
+					<p>分享到</p>
+					<ul class="clearfix">
+						<li>
+							<img src="img/index-img/icon-weixin.png">
+							<p>微信好友</p>
+						</li>
+						<li>
+							<img src="img/index-img/icon-ShareTimeline.png">
+							<p>微信朋友圈</p>
+						</li>
+						<li>
+							<img src="img/index-img/icon-sina.png">
+							<p>新浪微博</p>
+						</li>
+					</ul>
+					<input type="button" value="取消" class="share-cancel-btn"> 
+				</div>
+			</div>
+		</div>
+		<!-- 点击购买，下方出现的购买信息： -->
+		<div class="goods-go-pay-wrap">
+			<div class="goods-go-pay-mask">
+				<div class="goods-go-pay-alert">
+					<a href="javascript:void(0)" class="clearfix">
+						<img src="img/index-img/index-life-home-img.png">
+						<ul>
+							<li>沃之沃 多功能收纳盒内衣盒六件套</li>
+							<li>
+								<span>&yen;&nbsp;11.5</span>
+								<span>原价：</span>
+								<span>&yen;&nbsp;12.8</span>
+							</li>
+						</ul>
+					</a>
+					<p class="goods-size">规格</p>
+					<form class="select-goods-size">
+						<input type="button" value="600g" class="selectActive">
+						<input type="button" value="800g">
+					</form>
+					<p>数量</p>
+					<form class="goods-number">
+						<input type="button" value="-" class="goods-number-cut-btn">
+						<input type="tel" value="1" class="goods-pay-number">
+						<input type="button" value="+" class="goods-number-add-btn"> 
+					</form>
+					<input type="button" value="确认" class="goods-info-confirm-btn"> 
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".detail-title").on("click","li",function(){
+				var index=$(this).index();
+				if(index==0){
+					//事件委托：
+					$(this).parents("ul").find("div").stop().animate({
+						left:"17%",
+					})
+					$(".goods-detail-wrap").show();
+					$(".user-assess-wrap").hide();
+				}else{
+					$(this).parents("ul").find("div").stop().animate({
+						left:"67%",
+					})
+					$(".goods-detail-wrap").hide();
+					$(".user-assess-wrap").show();
+				}
+			})
+			function clock(){
+				var currentDate = new Date();//获取当前时间
+				var targetDate = new Date(2016,8,1);//目标日期为2016年9月1日
+				var remainTime = targetDate - currentDate;
+				//天数
+				remainDay = parseInt(remainTime/1000/60/60/24);
+				//小时数
+				remainHours = parseInt(remainTime/1000/60/60%24);
+				//分钟
+				remainMinutes = parseInt(remainTime/1000/60%60);
+				//秒
+				remainSeconds = parseInt(remainTime/1000%60);
+				$(".goods-count-down-time").html("限时："+remainDay+"天"+remainHours+"小时"+remainMinutes+"分"+remainSeconds+"秒");
+			}
+			setInterval(clock,1000);
+			// 4.升级成为会员页面的事件：
+			// setTimeout(function(){
+			// 	$(".upgrade-vip-mask").show();
+			// },1000)
+			$(".upgrade-vip-mask-inner").on("click",function(){
+				$(".upgrade-vip-mask").hide();
+			})
+			// 4.1升级会员的弹窗的事件：
+			$("#upgrade-vip-alert-pay").on("click",function(){
+				$(".sales-phone-details-page").hide();
+				$(".upgrade-vip-mask").hide();
+				$(".upgrade-vip-detail").show();
+			})
+			$(".upgrade-vip-alert").on("click",function(e){
+				e.stopPropagation();//阻止冒泡
+			})
+			var upgradeVipTimer=setInterval(function(){
+				$(".upgrade-vip-mask").show();
+			},600000)
+			// $("#upgrade-vip-alert-pay").trigger("click");
+			// 4.2升级会员的订单详情支付页面的事件：
+			$("#vip-pay-btn").on("click",function(){
+				$(".upgrade-vip-success").show();
+				$(".upgrade-vip-detail").hide();
+			})
+			$("#upgrade-vip-detail-back").on("click",function(){
+				$(".sales-phone-details-page").show();
+				$(".upgrade-vip-detail").hide();
+			})
+			// 4.3升级会员的订单详情支付成功页面的事件：
+			$("#vip-success-goshopping").on("click",function(){
+				$(".sales-phone-details-page").show();
+				$(".upgrade-vip-success").hide();
+			})
+			$("#upgrade-vip-success-back").on("click",function(){
+				$(".upgrade-vip-success").hide();
+				$(".upgrade-vip-detail").show();
+			})
+			// 右上角的分享按钮的事件：
+			$(".share-btn").on("click",function(){
+				$(".sales-share-mask-wrap").show();
+			})
+			$(".share-cancel-btn").on("click",function(){
+				$(".sales-share-mask-wrap").hide();
+			})
+			//回退：
+			$("#get-life-back").on("click",function(){
+				location.href="index-life-home-info.html";
+			})
+			//加入购物车：
+			var numb=parseInt($(".cart-goods-number").get(0).innerHTML);
+			$(".sales-add-cart").on("click",function(){
+				$(".cart-goods-number").get(0).innerHTML=numb+1;//点击后只加一次
+			})
+			//立即购买：
+			$(".sales-go-pay").on("click",function(){
+				// location.href="";
+			})
+			//购买页面的事件：
+			$(".sales-go-pay").on("click",function(){
+				$(".goods-go-pay-wrap").show();
+			})
+			$(".select-goods-size").on("click","input",function(){
+				$(this).addClass("selectActive").siblings().removeClass("selectActive");
+			})
+			var goodsNumber=parseInt($(".goods-pay-number").val());
+			$(".goods-number-cut-btn").on("click",function(){
+				if(goodsNumber>0){
+					goodsNumber--;
+					$(".goods-pay-number").val(goodsNumber);
+				}
+			})
+			$(".goods-number-add-btn").on("click",function(){
+				if(goodsNumber<100){
+					goodsNumber++;
+					$(".goods-pay-number").val(goodsNumber);
+				}
+			})
+			$(".goods-go-pay-mask").on("click",function(){
+				$(".goods-go-pay-wrap").hide();
+			})
+			$(".goods-go-pay-alert").on("click",function(e){
+				e.stopPropagation();
+			})
+			$(".goods-info-confirm-btn").on("click",function(){
+				// 需要将购买的信息保存，并跳转至付款页面
+			})
+		})
+	</script>
+</body>
+</html>

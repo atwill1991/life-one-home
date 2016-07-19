@@ -1,0 +1,53 @@
+body{
+	background-color: #feffff;
+}
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+ul.my-vip-info{
+	width: 94%;
+	margin:4% auto 10%;
+	color: #656667;
+	font-size: 1.6rem;
+}
+p.vip-model{
+	width: 94%;
+	margin:0 auto;
+	position: relative;
+	text-align: center;
+	font-size: 1.8rem;
+	color: #68696b;
+}
+p.vip-model:before,p.vip-model:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 12px;
+	right: 0;
+	width: 36%;
+	height: 2px;
+	background-color: #edeeee;
+}
+p.vip-model:before{
+	left: 0;
+}
+ul.general-vip-info-list{
+	width: 94%;
+	margin:3.2% auto 10%;
+}
+ul.general-vip-info-list>li{
+	font-size: 1.6rem;
+	text-align: center;
+	color: #0d1016;
+}
+ul.holder-vip-info-list{
+	width: 94%;
+	margin:3.2% auto 10%;
+}
+ul.holder-vip-info-list>li{
+	font-size: 1.6rem;
+	text-align: center;
+	color: #0d1016;
+}

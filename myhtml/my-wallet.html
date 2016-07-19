@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的钱包</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/mycss/my-wallet.css">
+</head>
+<body>
+	<div class="my-wallet-page">
+		<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="header-container">
+				<header class="pub-header clearfix">
+					<a href="javascript:void(0)" id="my-wallet-back" class="get-back"></a>
+					<h3 class="cur-title">我的钱包</h3>
+					<a href="javascript:void(0)" class="font-btn">账单</a>
+				</header>
+			</div>
+		</div>
+		<img src="../img/myinfo-img/my-wallet-icon.png" class="my-wallet-icon">
+		<p class="my-remain">我的余额</p>
+		<p class="my-remain-money">&yen;88.50</p>
+		<ul class="pay-way">
+			<li class="select-active">
+				<img src="../img/myinfo-img/transparent-rect-img.png" alt="" class="zfb-pay-icon">
+				<span>支付宝</span>
+			</li>
+			<li>
+				<img src="../img/myinfo-img/transparent-rect-img.png" class="wx-pay-icon">
+				<span>微信支付</span>
+			</li>
+		</ul>
+		<a href="javascript:void(0)" class="public-confirm-btn pay-confirm-btn">充值</a>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#my-wallet-back").on("click",function(){
+				location.href="my-index.html";
+			})
+			$(".pay-way").on("click","li",function(){
+				$(this).addClass("select-active").siblings().removeClass("select-active");
+			})
+			$(".pay-confirm-btn").on("click",function(){
+				location.href="my-wallet-recharge.html";
+			})
+		})
+	</script>
+</body>
+</html>
