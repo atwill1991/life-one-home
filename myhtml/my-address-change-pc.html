@@ -131,7 +131,9 @@
 					li.innerHTML=provinceArr[proIndex].city[j]["-name"];
 					cityList.appendChild(li);
 				}
+				cityValue=provinceArr[proIndex].city[0]["-name"];
 			}
+			cityData();
 			// 区、县的数据的遍历的函数：
 			function countyData(){
 				countyList.innerHTML="";//清除原来的区、县的信息
@@ -141,7 +143,9 @@
 					li.innerHTML=countyArr[k]["-name"];
 					countyList.appendChild(li);
 				}
+				countyValue=countyArr[0]["-name"];
 			}
+			countyData();
 			var provinceLi=document.querySelectorAll("#province-list>li");
 			provinceList.onmousedown=function(e){
 				var beginTop = provinceList.offsetTop;
@@ -180,7 +184,7 @@
 				var e=e||window.event;
 				var oY=e.clientY-beginTop;
 				var liNumb=$("#city-list>li").length;
-				// console.log(liNumb)
+				console.log(liNumb);
 				document.onmousemove=function(e){
 					var e=e||window.event;
 					var oTop=e.clientY-oY;

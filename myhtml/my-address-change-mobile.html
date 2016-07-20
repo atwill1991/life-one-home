@@ -125,14 +125,16 @@
 			// 市的数据的遍历的函数：
 			function cityData(){
 				cityList.innerHTML="";//清除原来的市的信息
-				// 遍历市的信息：
+				// 遍历市的数据：
 				for(var j=0;j<provinceArr[proIndex].city.length;j++){
 					var li=document.createElement("li");
 					li.innerHTML=provinceArr[proIndex].city[j]["-name"];
 					cityList.appendChild(li);
 					// console.log(provinceArr[proIndex].city.length)
 				}
+				cityValue=provinceArr[proIndex].city[0]["-name"];
 			}
+			cityData();
 			// 区、县的数据的遍历的函数：
 			function countyData(){
 				countyList.innerHTML="";//清除原来区、县的信息
@@ -142,9 +144,10 @@
 					li.innerHTML=countyArr[k]["-name"];
 					countyList.appendChild(li);
 				}
+				countyValue=countyArr[0]["-name"];
 			}
+			countyData();
 			var provinceLi=document.querySelectorAll("#province-list>li");
-			
 			function docMove(e){
 				e.preventDefault();//取消默认事件
 			}
@@ -183,12 +186,12 @@
 			},false)
 			// 市的拖拽：
 			var cityLi=document.querySelectorAll("#city-list>li");
-			
+			// cityNumb
 			cityList.addEventListener("touchstart",function(e){
 				var beginTop = cityList.offsetTop;
 				var oY=e.touches[0].clientY-beginTop;
-				var liNumb=$("#province-list>li").length;
-				// console.log(liNumb)
+				var cityNumb=provinceArr[proIndex].city.length;
+				// console.log(cityNumb);
 				cityList.addEventListener("touchmove",function(e){
 					document.addEventListener("touchmove",docMove,false);//取消document的默认事件
 					// console.log(e);
@@ -198,9 +201,12 @@
 						if(parseInt(oTop/44)>=2){
 							num=2;
 						}
-						if(parseInt(oTop/44)<=2-liNumb){
-							num=3-liNumb;
+						if(parseInt(oTop/44)<=2-cityNumb){
+							num=3-cityNumb;
+							console.log(num+"市");
 						}
+						console.log(cityNumb)
+						console.log(num);
 						cityList.style.top=num*44+"px";
 						cityValue=$("#city-list>li").eq(2-num).text();
 						citIndex=2-num;
@@ -208,7 +214,7 @@
 					}else{
 						cityList.style.top=beginTop+"px";
 					}
-					console.log(oTop)
+					// console.log(oTop)
 				},false)
 				document.addEventListener("touchend",function(){
 					document.onmousemove=null;
@@ -221,8 +227,8 @@
 			countyList.addEventListener("touchstart",function(e){
 				var beginTop = countyList.offsetTop;
 				var oY=e.touches[0].clientY-beginTop;
-				var liNumb=$("#province-list>li").length;
-				// console.log(liNumb)
+				var countyNumb=provinceArr[proIndex].city[citIndex].county.length;
+				// console.log(countyNumb)
 				countyList.addEventListener("touchmove",function(e){
 					document.addEventListener("touchmove",docMove,false);//取消document的默认事件
 					// console.log(e);
@@ -232,8 +238,8 @@
 						if(parseInt(oTop/44)>=2){
 							num=2;
 						}
-						if(parseInt(oTop/44)<=2-liNumb){
-							num=3-liNumb;
+						if(parseInt(oTop/44)<=2-countyNumb){
+							num=3-countyNumb;
 						}
 						countyList.style.top=num*44+"px";
 						countyValue=$("#county-list>li").eq(2-num).text();
