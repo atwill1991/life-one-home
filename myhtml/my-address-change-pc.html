@@ -110,6 +110,9 @@
 			var provinceList=document.getElementById("province-list");
 			var cityList=document.getElementById("city-list");
 			var countyList=document.getElementById("county-list");
+			var provinceValue="广东";
+			var cityValue="广州";
+			var countyValue="天河";
 			// 省的拖拽：
 			provinceList.innerHTML="";//清除原来的省得信息
 			var provinceArr=addressArea.china.province;//数组
@@ -140,7 +143,6 @@
 				}
 			}
 			var provinceLi=document.querySelectorAll("#province-list>li");
-			var provinceValue="广东";
 			provinceList.onmousedown=function(e){
 				var beginTop = provinceList.offsetTop;
 				var e=e||window.event;
@@ -172,9 +174,7 @@
 				}
 			}
 			// 市的拖拽：
-			
 			var cityLi=document.querySelectorAll("#city-list>li");
-			var cityValue="广东";
 			cityList.onmousedown=function(e){
 				var beginTop = cityList.offsetTop;
 				var e=e||window.event;
@@ -205,9 +205,7 @@
 				}
 			}
 			// 区、县的拖拽：
-			
 			var countyLi=document.querySelectorAll("#county-list>li");
-			var countyValue="广东";
 			countyList.onmousedown=function(e){
 				var beginTop = countyList.offsetTop;
 				var e=e||window.event;
