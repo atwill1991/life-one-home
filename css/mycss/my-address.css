@@ -74,6 +74,9 @@ li.address-info>p>span{
 	float: left;
 	width: 33.3%;
 	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 li.address-info>p>span:after{
 	content: '';

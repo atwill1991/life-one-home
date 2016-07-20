@@ -160,6 +160,8 @@
 					document.addEventListener("touchmove",docMove,false);//取消document的默认事件
 					// console.log(e);
 					// e.stopPropagation();
+					cityList.style.top="88px";
+					countyList.style.top="88px";
 					var oTop=e.touches[0].clientY-oY;
 					var num=parseInt(oTop/44);
 					if(oTop/22!=0){
@@ -193,8 +195,10 @@
 				var cityNumb=provinceArr[proIndex].city.length;
 				// console.log(cityNumb);
 				cityList.addEventListener("touchmove",function(e){
+
 					document.addEventListener("touchmove",docMove,false);//取消document的默认事件
 					// console.log(e);
+					countyList.style.top="88px";
 					var oTop=e.touches[0].clientY-oY;
 					var num=parseInt(oTop/44);
 					if(oTop/22!=0){

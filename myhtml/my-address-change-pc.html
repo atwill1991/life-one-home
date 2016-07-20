@@ -154,6 +154,8 @@
 				var liNumb=$("#province-list>li").length;
 				// console.log(liNumb)
 				document.onmousemove=function(e){
+					cityList.style.top="88px";
+					countyList.style.top="88px";
 					var e=e||window.event;
 					var oTop=e.clientY-oY;
 					var num=parseInt(oTop/44);
@@ -186,6 +188,7 @@
 				var liNumb=$("#city-list>li").length;
 				console.log(liNumb);
 				document.onmousemove=function(e){
+					countyList.style.top="88px";
 					var e=e||window.event;
 					var oTop=e.clientY-oY;
 					var num=parseInt(oTop/44);
