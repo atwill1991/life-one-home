@@ -1,0 +1,1152 @@
+{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "H5954473E",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name": "left-home",/*应用名称，程序桌面图标名称*/
+    "version": {
+        "name": "1.0",/*应用版本名称*/
+        "code": ""
+    },
+    "description": "",/*应用描述信息*/
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer": {
+        "name": "",/*开发者名称*/
+        "email": "",/*开发者邮箱地址*/
+        "url": ""/*开发者个人主页地址*/
+    },
+    "permissions": {
+        "Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        "Messaging":{
+        	"description": "短彩邮件插件"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+        "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        },
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        }
+    },
+    "plus": {
+        "splashscreen": {
+            "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+        },
+        "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保���给应用签名，暂不使用*/
+        "distribute": {
+            "apple": {
+                "appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision": "",/*iOS应用打包配置文件*/
+                "password": "",/*iOS应用打包个人证书导入密码*/
+                "p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks":[
+                ]/*调用Native.js调用原生Objective-c API需要引用的FrameWork，如需调用GameCenter，则添加"GameKit.framework"*/
+            },
+            "google": {
+                "packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore": "",/*Android应用打包使用的密钥库文件*/
+                "password": "",/*Android应用打包使用密钥库中证书的密码*/
+                "aliasname": "",/*Android应用打包���用密钥库中证书的别名*/
+               "permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
+            },
+            "orientation": [
+                "portrait-primary"
+            ],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons": {
+                "ios": {
+                    "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+                    "auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+                    "iphone": {
+                        "normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+                        "retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"settings-retina8": "unpackage/res/icons/87x87.png" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                    },
+                    "ipad": {
+                        "normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+                        "normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+                        "retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        "spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                    }
+                },
+                "android": {
+                    "mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "unpackage/res/icons/144x144.png"/*1080P 高分屏程序图标，分辨率：144x144*/
+                }
+            },
+            "splashscreen": {
+                "ios": {
+                    "iphone": {
+                        "default": "", /*iPhone3启动图片选，分辨率：320x480*/
+                        "retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+                        "retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+                        "retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+                        "retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+                        "retina55l": ""/*5.5 英寸设备(iPhone6 Plus)横屏启动图片，分辨率：2208x1242*/
+                    },
+                    "ipad": {
+                        "portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+                        "portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+                        "landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+                        "landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+                        "portrait7": "", /*iPad iOS7竖屏启动图��，分辨率：768x1024*/
+                        "portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+                        "landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+                        "landscape-retina7": ""/*iPad iOS7高分屏横屏启动图片，分辨率：2048x1536*/
+                    }
+                },
+                "android": {
+                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": ""/*1080P高分屏启动图片，分辨率：1080x1882*/
+                }
+            }
+        }
+    },
+	"dependencies":{
+	  "pages": {
+	    "sales-details.html": {
+	      "href": "sales-details.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/sales-details.css",
+	        "img/index-img/icon-assess-star.png",
+	        "img/index-img/shopping-cart.png",
+	        "img/index-img/upgrade-vip-alert-bg.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/honor-phone1.png",
+	        "img/index-img/vip-pay-success.png",
+	        "img/index-img/huawei-phone2.png",
+	        "img/index-img/vip-detail-img.png",
+	        "img/index-img/icon-weixin.png",
+	        "img/index-img/icon-ShareTimeline.png",
+	        "img/index-img/icon-sina.png"
+	      ],
+	      "refer": [
+	        "index.html"
+	      ],
+	      "priority": 0
+	    },
+	    "myhtml/my-vip-recharge-success.html": {
+	      "href": "myhtml/my-vip-recharge-success.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-vip-siblings.css",
+	        "js/jquery.min.js",
+	        "img/index-img/vip-pay-success.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-vip-recharge.html",
+	        "myhtml/my-index.html"
+	      ],
+	      "priority": 2
+	    },
+	    "myhtml/my-vip-recharge.html": {
+	      "href": "myhtml/my-vip-recharge.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-vip-siblings.css",
+	        "js/jquery.min.js",
+	        "img/index-img/vip-detail-img.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-vip.html",
+	        "myhtml/my-vip-recharge-success.html"
+	      ],
+	      "priority": 1
+	    },
+	    "myhtml/my-vip.html": {
+	      "href": "myhtml/my-vip.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-vip.css",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-vip-recharge.html",
+	        "myhtml/my-index.html"
+	      ],
+	      "priority": 1
+	    },
+	    "myhtml/my-info-supply.html": {
+	      "href": "myhtml/my-info-supply.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/myinfo-img/img-updata-icon.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html"
+	      ],
+	      "priority": 2
+	    },
+	    "myhtml/my-info-contact-operate.html": {
+	      "href": "myhtml/my-info-contact-operate.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html",
+	        "myhtml/my-info-contact-operate.html"
+	      ],
+	      "priority": 4
+	    },
+	    "myhtml/my-info-contact.html": {
+	      "href": "myhtml/my-info-contact.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html",
+	        "myhtml/my-info-contact-operate.html"
+	      ],
+	      "priority": 3
+	    },
+	    "myhtml/my-info-wallet.html": {
+	      "href": "myhtml/my-info-wallet.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html",
+	        "myhtml/my-info-contact-operate.html"
+	      ],
+	      "priority": 5
+	    },
+	    "myhtml/my-info-pwd.html": {
+	      "href": "myhtml/my-info-pwd.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html"
+	      ],
+	      "priority": 6
+	    },
+	    "myhtml/my-info-name.html": {
+	      "href": "myhtml/my-info-name.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info-siblings.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info.html"
+	      ],
+	      "priority": 7
+	    },
+	    "myhtml/my-info.html": {
+	      "href": "myhtml/my-info.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-info.css",
+	        "img/myinfo-img/my-info-women-icon.png",
+	        "img/myinfo-img/icon-blink.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-info-supply.html",
+	        "myhtml/my-info-contact.html",
+	        "myhtml/my-index.html",
+	        "myhtml/my-info-wallet.html",
+	        "myhtml/my-info-pwd.html",
+	        "myhtml/my-info-name.html"
+	      ],
+	      "priority": 2
+	    },
+	    "myhtml/my-address-change-mobile.html": {
+	      "href": "myhtml/my-address-change-mobile.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-address.css",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js",
+	        "js/china.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-address.html"
+	      ],
+	      "priority": 3
+	    },
+	    "myhtml/my-address-change-pc.html": {
+	      "href": "myhtml/my-address-change-pc.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-address.css",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js",
+	        "js/china.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-address.html"
+	      ],
+	      "priority": 5
+	    },
+	    "myhtml/my-address.html": {
+	      "href": "myhtml/my-address.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-address.css",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-address-change-mobile.html",
+	        "myhtml/my-index.html",
+	        "myhtml/my-address-change-pc.html"
+	      ],
+	      "priority": 3
+	    },
+	    "myhtml/my-order-details.html": {
+	      "href": "myhtml/my-order-details.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 4
+	    },
+	    "myhtml/my-order-return.html": {
+	      "href": "myhtml/my-order-return.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 5
+	    },
+	    "myhtml/my-order-sendAfter.html": {
+	      "href": "myhtml/my-order-sendAfter.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 6
+	    },
+	    "myhtml/my-order-sendBefore.html": {
+	      "href": "myhtml/my-order-sendBefore.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 7
+	    },
+	    "myhtml/my-order-finish-getAssess.html": {
+	      "href": "myhtml/my-order-finish-getAssess.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 11
+	    },
+	    "myhtml/my-order-finish2.html": {
+	      "href": "myhtml/my-order-finish2.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order-finish-getAssess.html",
+	        "myhtml/my-order.html"
+	      ],
+	      "priority": 11
+	    },
+	    "myhtml/my-order-finish-goAssess.html": {
+	      "href": "myhtml/my-order-finish-goAssess.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html",
+	        "myhtml/my-order-finish2.html"
+	      ],
+	      "priority": 10
+	    },
+	    "myhtml/my-order-finish.html": {
+	      "href": "myhtml/my-order-finish.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order-siblings.css",
+	        "img/index-img/icon-assess-star.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png",
+	        "img/myinfo-img/select-icon.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order.html",
+	        "myhtml/my-order-finish-goAssess.html"
+	      ],
+	      "priority": 9
+	    },
+	    "myhtml/my-order.html": {
+	      "href": "myhtml/my-order.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-order.css",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-order-details.html",
+	        "myhtml/my-order-return.html",
+	        "myhtml/my-order-sendAfter.html",
+	        "myhtml/my-order-sendBefore.html",
+	        "myhtml/my-index.html",
+	        "myhtml/my-order-finish.html"
+	      ],
+	      "priority": 4
+	    },
+	    "myhtml/my-more-help-question.html": {
+	      "href": "myhtml/my-more-help-question.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-more-sibilings.css",
+	        "img/myinfo-img/icon-phone-img.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-more-help.html"
+	      ],
+	      "priority": 7
+	    },
+	    "myhtml/my-more-help.html": {
+	      "href": "myhtml/my-more-help.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-more-sibilings.css",
+	        "img/myinfo-img/icon-phone-img.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js",
+	        "img/myinfo-img/serve-help-icon.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-more.html",
+	        "myhtml/my-more-help-question.html"
+	      ],
+	      "priority": 6
+	    },
+	    "myhtml/my-more-opinion.html": {
+	      "href": "myhtml/my-more-opinion.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-more-sibilings.css",
+	        "img/myinfo-img/icon-phone-img.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-more.html"
+	      ],
+	      "priority": 8
+	    },
+	    "myhtml/my-more-about.html": {
+	      "href": "myhtml/my-more-about.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-more-sibilings.css",
+	        "img/myinfo-img/icon-phone-img.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-more.html"
+	      ],
+	      "priority": 9
+	    },
+	    "myhtml/my-more.html": {
+	      "href": "myhtml/my-more.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-more.css",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-more-help.html",
+	        "myhtml/my-index.html",
+	        "myhtml/my-more-opinion.html",
+	        "myhtml/my-more-about.html"
+	      ],
+	      "priority": 6
+	    },
+	    "myhtml/my-collection.html": {
+	      "href": "myhtml/my-collection.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-collection.css",
+	        "img/myinfo-img/pay-way-icon.png",
+	        "js/jquery.min.js",
+	        "img/index-img/search-food1.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-index.html"
+	      ],
+	      "priority": 7
+	    },
+	    "myhtml/my-wallet-recharge-log.html": {
+	      "href": "myhtml/my-wallet-recharge-log.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-wallet.css",
+	        "img/myinfo-img/pay-way-icon.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-wallet-recharge.html"
+	      ],
+	      "priority": 9
+	    },
+	    "myhtml/my-wallet-recharge.html": {
+	      "href": "myhtml/my-wallet-recharge.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-wallet.css",
+	        "img/myinfo-img/pay-way-icon.png",
+	        "js/jquery.min.js"
+	      ],
+	      "refer": [
+	        "myhtml/my-wallet.html",
+	        "myhtml/my-wallet-recharge-log.html"
+	      ],
+	      "priority": 8
+	    },
+	    "myhtml/my-wallet.html": {
+	      "href": "myhtml/my-wallet.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-wallet.css",
+	        "img/myinfo-img/pay-way-icon.png",
+	        "js/jquery.min.js",
+	        "img/myinfo-img/my-wallet-icon.png",
+	        "img/myinfo-img/transparent-rect-img.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-wallet-recharge.html",
+	        "myhtml/my-index.html"
+	      ],
+	      "priority": 8
+	    },
+	    "myhtml/my-index.html": {
+	      "href": "myhtml/my-index.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/mycss/my-index.css",
+	        "img/myinfo-img/my-icon.png",
+	        "img/myinfo-img/my-index-icon.png",
+	        "img/myinfo-img/icon-right-btn.png",
+	        "img/index-img/index-icon.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/myinfo-img/my-bg-icon.png",
+	        "img/myinfo-img/transparent-rect-img.png",
+	        "img/myinfo-img/icon-king.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-vip.html",
+	        "myhtml/my-info.html",
+	        "myhtml/my-address.html",
+	        "myhtml/my-order.html",
+	        "index.html",
+	        "myhtml/my-more.html",
+	        "myhtml/my-collection.html",
+	        "myhtml/my-wallet.html"
+	      ],
+	      "priority": 1
+	    },
+	    "login.html": {
+	      "href": "login.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/login.css",
+	        "img/myinfo-img/icon-user.png",
+	        "img/myinfo-img/icon-key.png",
+	        "js/jquery.min.js",
+	        "img/myinfo-img/login-icon.png"
+	      ],
+	      "refer": [
+	        "myhtml/my-index.html",
+	        "index.html"
+	      ],
+	      "priority": 1
+	    },
+	    "index-onekey-service.html": {
+	      "href": "index-onekey-service.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/index-onekey-service.css",
+	        "img/index-img/icon-alert.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js"
+	      ],
+	      "refer": [
+	        "index.html"
+	      ],
+	      "priority": 2
+	    },
+	    "index-life-home-info-details.html": {
+	      "href": "index-life-home-info-details.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/index-life-info-details-public.css",
+	        "img/index-img/shopping-cart.png",
+	        "img/index-img/upgrade-vip-alert-bg.png",
+	        "css/index-life-home-info-details.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/women-goods1.png",
+	        "img/index-img/vip-pay-success.png",
+	        "img/index-img/index-life-home-info-img.png",
+	        "img/index-img/vip-detail-img.png",
+	        "img/index-img/index-life-home-img.png",
+	        "img/index-img/icon-weixin.png",
+	        "img/index-img/icon-ShareTimeline.png",
+	        "img/index-img/icon-sina.png",
+	        "img/index-img/sales-user-scroe.png"
+	      ],
+	      "refer": [
+	        "index-life-home-info.html"
+	      ],
+	      "priority": 3
+	    },
+	    "index-life-home-info.html": {
+	      "href": "index-life-home-info.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/index-life-public.css",
+	        "css/index-life-home-info.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/shop-info-big-img.png",
+	        "img/index-img/index-life-home-img.png"
+	      ],
+	      "refer": [
+	        "index-life-home-info-details.html",
+	        "index.html"
+	      ],
+	      "priority": 3
+	    },
+	    "index-shop-info-details.html": {
+	      "href": "index-shop-info-details.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/shop-info-details.css",
+	        "img/index-img/icon-tel-phone.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/shop-info-details-bg-img.png",
+	        "img/index-img/shop-info-icon.png",
+	        "img/index-img/shop-info-details-bg-img2.png",
+	        "img/index-img/icon-weixin.png",
+	        "img/index-img/icon-ShareTimeline.png",
+	        "img/index-img/icon-sina.png"
+	      ],
+	      "refer": [
+	        "index-shop-info.html"
+	      ],
+	      "priority": 4
+	    },
+	    "index-shop-info.html": {
+	      "href": "index-shop-info.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/public.css",
+	        "img/index-img/go-back.png",
+	        "img/index-img/go-back2.png",
+	        "img/index-img/icon-star-collect.png",
+	        "img/index-img/icon-star-collect2.png",
+	        "img/index-img/icon-share.png",
+	        "img/index-img/icon-share2.png",
+	        "css/index-shop-info.css",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/shop-info-big-img.png",
+	        "img/index-img/shop-info-icon.png"
+	      ],
+	      "refer": [
+	        "index-shop-info-details.html",
+	        "index.html"
+	      ],
+	      "priority": 4
+	    },
+	    "index.html": {
+	      "href": "index.html",
+	      "resources": [
+	        "css/base.css",
+	        "css/idangerous.swiper.css",
+	        "css/index.css",
+	        "img/index-img/angle-bottom.png",
+	        "img/index-img/search.png",
+	        "img/index-img/index-icon.png",
+	        "img/index-img/go-back.png",
+	        "img/index-img/search-fdj.png",
+	        "img/index-img/upgrade-vip-alert-bg.png",
+	        "js/jquery.min.js",
+	        "js/idangerous.swiper.min.js",
+	        "img/index-img/big-pic.png",
+	        "img/index-img/search-not-find.png",
+	        "img/index-img/vip-pay-success.png",
+	        "img/index-img/ind-left1.png",
+	        "img/index-img/ind-food.png",
+	        "img/index-img/ind-Products.png",
+	        "img/index-img/ind-home.png",
+	        "img/index-img/ind-serve.png",
+	        "img/index-img/ind-phone.png",
+	        "img/index-img/ind-baojie.png",
+	        "img/index-img/ind-headset.png",
+	        "img/index-img/vip-detail-img.png",
+	        "img/index-img/search-food1.png",
+	        "img/index-img/msg-mask-close.png"
+	      ],
+	      "refer": [
+	        "sales-details.html",
+	        "login.html",
+	        "index-onekey-service.html",
+	        "index-life-home-info.html",
+	        "index-shop-info.html"
+	      ],
+	      "priority": 0
+	    }
+	  },
+	  "idle": {
+	    "resources": [
+	      "img/index-img/food.psd",
+	      "js/fastclick.js",
+	      "img/index-img/goods3.png",
+	      "img/myinfo-img/my-info-icon.png",
+	      "img/public-img/angle-left.png",
+	      "img/myinfo-img/angle-left.png",
+	      "img/index-img/goods2.png",
+	      "css/index-location.css",
+	      "img/myinfo-img/add-img-icon.png",
+	      "index2.html"
+	    ]
+	  }
+	},
+	"unpackage":[
+	  "index2.html"
+	]
+}

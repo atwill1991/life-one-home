@@ -155,8 +155,9 @@ body{
 .pwd-form>input:first-child{
 	border-bottom: 2px solid #ebeced;
 }
-#register-btn{
+a.public-confirm-btn{
 	margin-top:28%;
+	margin-bottom: 10%;
 }
 /***********注册页面 end********/
 /***********忘记密码页面 begin********/
