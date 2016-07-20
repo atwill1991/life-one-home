@@ -1,0 +1,84 @@
+body>div{
+	width: 100%;
+	max-width: 750px;
+	margin:0 auto;
+}
+footer.index-footer{
+	width: 100%;
+	height:56px;
+}
+/*底部切换：*/
+.index-footer-wrap{
+	width: 100%;
+	height: 76px;
+}
+footer.index-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height:56px;
+}
+ul.ind-footer{
+	width: 100%;
+	height:56px;
+	position: relative;
+	max-width: 750px;
+	margin: 0 auto;
+	background-color: white;
+}
+ul.ind-footer>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	font-size: 1.4rem;
+	color:#7e7e7f;
+	padding-top:4px;
+}
+ul.ind-footer>li>a{
+	display: block;
+	margin:0 auto;
+	text-decoration: none;
+}
+ul.ind-footer>li.active>a{
+	color:#ed8fe8;
+}
+ul.ind-footer>li:before{
+	content: '';
+	display: block;
+	margin:0 auto;
+	width: 30px;
+	height: 28px;
+	background: url(../img/index-img/index-icon.png) no-repeat;
+	background-size: 150px 60px;
+}
+ul.ind-footer>li:nth-child(1):before{
+	background-position: -1% -4%;
+}
+ul.ind-footer>li:nth-child(2):before{
+	background-position: 25% -4%;
+}
+ul.ind-footer>li:nth-child(3):before{
+	background-position: 52% -4%;
+}
+ul.ind-footer>li:nth-child(4):before{
+	background-position: 77% -4%;
+}
+ul.ind-footer>li:nth-child(5):before{
+	background-position: 105% -4%;
+}
+ul.ind-footer>li.index-page.active:before{
+	background-position: -1% 102%;
+}
+ul.ind-footer>li.vip.active:before{
+	background-position: 25% 104%;
+}
+ul.ind-footer>li.sort.active:before{
+	background-position: 52% 103%;
+}
+ul.ind-footer>li.cart.active:before{
+	background-position: 77% 104%;
+}
+ul.ind-footer>li.info.active:before{
+	background-position: 105% 104%;
+}

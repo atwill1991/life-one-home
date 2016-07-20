@@ -12,13 +12,23 @@
 <body>
 	<!-- 1.首页页面： -->
 	<div id="index-page">
-		<div class="ind-header">
+	<!-- 头部： -->
+		<div class="header-wrap">
+			<div class="ind-header">
+				<header class="index-header clearfix">
+					<a href="javascript:void(0)" id="index-location" class="get-back">广州</a>
+					<h1 class="cur-title">我的钱包</h1>
+					<a href="javascript:void(0)" class="font-btn" id="index-search">账单</a>
+				</header>
+			</div>
+		</div>
+		<!-- <div class="ind-header">
 			<header class="index-header clearfix">
 				<span id="index-location">广州</span>
 				<h1>生活一家</h1>
 				<span id="index-search"></span>
 			</header>
-		</div>
+		</div> -->
 		<div class="icon-roll">
 			<img src="img/index-img/big-pic.png">
 			<div class="swiper-container">
@@ -211,15 +221,17 @@
 			
 		</div>
 	<!--    底部功能图标：    -->
-	<footer class="index-footer">
-		<ul class="ind-footer clearfix">
-			<li class="index-page active"><a href="javascript:void(0)">首页</a></li>
-			<li class="vip"><a href="javascript:void(0)">会员杂锦</a></li>
-			<li class="sort"><a href="javascript:void(0)">分类</a></li>
-			<li class="cart"><a href="javascript:void(0)">购物车</a></li>
-			<li class="info"><a href="javascript:void(0)">我的</a></li>
-		</ul>	
-	</footer>
+	<div class="index-footer-wrap">
+		<footer class="index-footer">
+			<ul class="ind-footer clearfix">
+				<li class="index-page active"><a href="javascript:void(0)">首页</a></li>
+				<li class="vip"><a href="javascript:void(0)">会员杂锦</a></li>
+				<li class="sort"><a href="javascript:void(0)">分类</a></li>
+				<li class="cart"><a href="javascript:void(0)">购物车</a></li>
+				<li class="info"><a href="javascript:void(0)">我的</a></li>
+			</ul>	
+		</footer>
+	</div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 	<!-- <script type="text/javascript" src="js/fastclick.js"></script> -->
