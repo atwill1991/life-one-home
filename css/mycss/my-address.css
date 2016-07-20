@@ -188,6 +188,7 @@ ul.address-select-wrap>li{
 	line-height: 44px;
 	overflow: hidden;
 	min-width: 8%;
+	min-height: 220px;
 }
 ul.address-select-wrap>li>ul{
 	position: relative;
