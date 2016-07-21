@@ -98,6 +98,12 @@ ul.shop-inner{
 	font-size: 1.6rem;
 	line-height: 1.2;
 	color:#212325;
+	/*2行省略：*/
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;/*-webkit-line-clamp用来限制在一个块元素显示的文本的行数*/
+	-webkit-box-orient: vertical;
 }
 .shop-inner>li>ul>li>a>ul>li:last-child{
 	font-size: 1.2rem;

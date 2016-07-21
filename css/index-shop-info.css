@@ -99,6 +99,10 @@ ul.shop-inner{
 	font-size: 1.4rem;
 	line-height: 1.5;
 	color:#353637;
+	/*单行省略：*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .shop-inner>li>ul>li>a>ul>li:first-child~li{
 	font-size: 1.2rem;
