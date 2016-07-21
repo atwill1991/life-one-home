@@ -173,7 +173,7 @@ ul.ind-footer>li>a{
 	text-decoration: none;
 }
 ul.ind-footer>li.myActive>a{
-	color:#ed8fe8;
+	color:#f2950f;
 }
 ul.ind-footer>li:before{
 	content: '';
