@@ -54,6 +54,8 @@ ul.tab-inner{
 	position: relative;
 	font-size: 1.4rem;
 	color: #4b4c4d;
+	height: 38px;
+	line-height: 38px;
 }
 span.goods-order-number{
 	position: absolute;
@@ -61,7 +63,11 @@ span.goods-order-number{
 	left: 0;
 }
 .tab-inner>li>p>span:last-child{
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 38px;
+	line-height: 38px;
 	color: #ef9b37;
 }
 ul.goods-info-list{
