@@ -9,8 +9,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
 address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
 .clearfix{*zoom:1;}
 .clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
-/*改写iOS Safari中可点击元素的高亮颜色。该属性可以只设置透明度。如果未设置透明度，iOS Safari使用默认的透明度。当透明度设为0，则会禁用此属性；当透明度设为1，元素在点击时不可见:*/
+/*为了在移动端显示更好的效果，后期添加的样式：*/
 *{
+	/*改写iOS Safari中可点击元素的高亮颜色。该属性可以只设置透明度。如果未设置透明度，iOS Safari使用默认的透明度。当透明度设为0，则会禁用此属性；当透明度设为1，元素在点击时不可见:*/
 	-webkit-tap-highlight-color :transparent;
 	tap-highlight-color :transparent;
+	/*可以使页面上的字体抗锯齿,使用后字体看起来会更清晰：*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-stroke-width: 0.2px;/*设置或检索对象中的文字的描边厚度，不允许负值*/
 }
