@@ -171,6 +171,7 @@ ul.ind-footer{
 	width: 100%;
 	height:56px;
 	background-color: white;
+	border-top: 2px solid #e9eaeb;
 }
 ul.ind-footer>li{
 	float: left;

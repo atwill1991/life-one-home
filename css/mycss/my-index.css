@@ -158,6 +158,7 @@ ul.ind-footer{
 	max-width: 750px;
 	margin: 0 auto;
 	background-color: white;
+	border-top: 2px solid #e9eaeb;
 }
 ul.ind-footer>li{
 	float: left;
