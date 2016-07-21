@@ -105,10 +105,10 @@ header,footer{
 }
 .bottom-slide{
 	position: absolute;
-	left: 17%;
 	bottom:-1px;
-	width: 16%;
-	/*min-width: 100px;*/
+	left: 25%;
+	margin-left: -40px;
+	width: 80px;
 	height: 2px;
 	background-color: #f90d0d;
 }
